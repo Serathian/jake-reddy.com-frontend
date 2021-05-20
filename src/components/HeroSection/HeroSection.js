@@ -35,7 +35,7 @@ const HeroSection = () => {
       <HeroContent>
         {/* <HeroImage src={heroImg} /> */}
         <HeroH1>
-          Hey! I'm <HeroName>Jake Reddy</HeroName>
+          Hey! my name's <HeroName>Jake Reddy</HeroName>
         </HeroH1>
         <HeroH1>
           and i'm an aspiring <br></br>

@@ -1,9 +1,13 @@
 export const colorPallet = {
-  primary: '#a3d4f7',
-  secondary: '#557A95',
+  primary: '#004bad',
+  secondary: '#7c7099',
   accent: '#fb8500',
-  background: '#5D5C61',
-  foreground: '#379683',
+  background: '#18211f',
+  popupBackground: '#716379',
+  content1: '#23152f',
+  content2: '#379683',
+  text: '#ffffff',
+  h1: '#ffffff',
 }
 //accent = orange
 //primary = light blue

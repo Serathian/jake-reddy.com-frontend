@@ -3,7 +3,7 @@ import { colorPallet } from '../../assets/ColorPallet'
 
 export const AboutMeContainer = styled.div`
   color: #fff;
-  background: #23152f;
+  background: ${colorPallet.background};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;

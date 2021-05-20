@@ -3,7 +3,8 @@ import { colorPallet } from '../../assets/ColorPallet'
 
 export const BodyContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? '#23152f' : 'black')};
+  background: ${({ lightBg }) =>
+    lightBg ? colorPallet.content1 : colorPallet.content2};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;

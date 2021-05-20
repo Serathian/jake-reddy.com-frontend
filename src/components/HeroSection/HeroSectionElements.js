@@ -3,7 +3,7 @@ import { MdArrowDownward, MdArrowForward } from 'react-icons/md'
 import { colorPallet } from '../../assets/ColorPallet'
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
+  background: ${colorPallet.background};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ export const VideoOverlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background: black;
+  background: ${colorPallet.background};
   opacity: 0.3;
   z-index: 2;
 `
@@ -37,14 +37,18 @@ export const VideoBackground = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #232a34;
+  background: ${colorPallet.background};
 `
 export const ImageBackground = styled.img`
   //position: fixed;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background: #232a34;
+  background: ${colorPallet.background};
+
+  @media screen and (max-width: 760px) {
+    object-fit: fill;
+  }
 `
 export const HeroContent = styled.div`
   z-index: 3;
@@ -72,7 +76,7 @@ export const HeroImage = styled.img`
   border-style: solid;
 `
 export const HeroH1 = styled.h1`
-  color: #fff;
+  color: ${colorPallet.h1};
   font-size: 48px;
   text-align: right;
   margin-bottom: 2.5px;

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { colorPallet } from '../../assets/ColorPallet'
 
 export const FooterContainer = styled.footer`
-  background-color: ${colorPallet.foreground};
+  background-color: ${colorPallet.background};
 `
 
 export const FooterWrapper = styled.div`

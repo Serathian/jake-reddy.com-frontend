@@ -4,7 +4,8 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? 'black' : 'transparent')};
+  background: ${({ scrollNav }) =>
+    scrollNav ? colorPallet.background : 'transparent'};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -45,7 +46,7 @@ export const NavLogo = styled(LinkRouter)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    color: ${colorPallet.accent};
+    color: ${colorPallet.secondary};
   }
 `
 

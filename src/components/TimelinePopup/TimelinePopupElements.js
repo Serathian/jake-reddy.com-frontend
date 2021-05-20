@@ -17,12 +17,12 @@ export const TimelinePopupBg = styled.div`
   position: fixed;
   z-index: 1001;
   background: #0d0d0d;
-  opacity: 0.5;
+  opacity: 0.75;
   height: 100%;
   width: 100%;
 `
 export const TimeLinePopupWrapper = styled.div`
-  background-color: lightgray;
+  /* background-color: ${colorPallet.popupBackground}; */
   border-radius: 2.5%;
   z-index: 1002;
   width: 70%;

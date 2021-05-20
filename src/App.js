@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import ContactMe from './components/ContactMe/ContactMe.js'
 import Home from './pages/Home.js'
@@ -8,11 +8,22 @@ import Footer from './components/Footer/Footer.js'
 import TimelinePopup from './components/TimelinePopup/TimelinePopup.js'
 
 function App() {
+  //Sidebar logic and state
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false)
-  const [timelineIsOpen, setTimelineIsOpen] = useState(false)
-
   const toggleSidebar = () => setSidebarIsOpen(!sidebarIsOpen)
+
+  //Timelinepopup logic and state
+  const [timelineIsOpen, setTimelineIsOpen] = useState(false)
   const toggleTimeline = () => setTimelineIsOpen(!timelineIsOpen)
+
+  //Stops background scroll when timeline is open
+  useEffect(() => {
+    if (timelineIsOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+  }, [timelineIsOpen])
 
   return (
     <>
