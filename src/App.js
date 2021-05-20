@@ -5,18 +5,28 @@ import Home from './pages/Home.js'
 import Navbar from './components/Navbar/Navbar'
 import { Sidebar } from './components/Sidebar/Sidebar'
 import Footer from './components/Footer/Footer.js'
+import TimelinePopup from './components/TimelinePopup/TimelinePopup.js'
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [sidebarIsOpen, setSidebarIsOpen] = useState(false)
+  const [timelineIsOpen, setTimelineIsOpen] = useState(false)
 
-  const toggle = () => setIsOpen(!isOpen)
+  const toggleSidebar = () => setSidebarIsOpen(!sidebarIsOpen)
+  const toggleTimeline = () => setTimelineIsOpen(!timelineIsOpen)
+
   return (
     <>
       <Router>
-        <Sidebar isOpen={isOpen} toggle={toggle} />
-        <Navbar toggle={toggle} />
+        <TimelinePopup
+          timelineIsOpen={timelineIsOpen}
+          toggleTimeline={toggleTimeline}
+        />
+        <Sidebar isOpen={sidebarIsOpen} toggle={toggleSidebar} />
+        <Navbar toggle={toggleSidebar} />
         <Switch>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/'>
+            <Home toggleTimeline={toggleTimeline} />{' '}
+          </Route>
           <Route exact path='/contact' component={ContactMe} />
         </Switch>
         <Footer />

@@ -16,7 +16,7 @@ import {
 import heroImg from '../../assets/images/heroImg.jpg'
 import { Button } from '../ButtonElement'
 
-const AboutMe = () => {
+const AboutMe = ({ toggleTimeline }) => {
   return (
     <AboutMeContainer id='about-me'>
       <AboutMeWrapper>
@@ -50,7 +50,9 @@ const AboutMe = () => {
               timeline - click the button below!
             </AboutMeP>
             <TimeLineBtnWrapper>
-              <Button accent={true}>View Timeline!</Button>
+              <Button accent={true} onClick={toggleTimeline}>
+                View Timeline!
+              </Button>
             </TimeLineBtnWrapper>
           </TextColum>
         </AboutMeRows>

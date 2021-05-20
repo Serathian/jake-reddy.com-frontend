@@ -6,11 +6,11 @@ import BodySection from '../components/BodySection/BodySection'
 import Cards from '../components/Cards/Cards'
 import AboutMe from '../components/AboutMe/AboutMe'
 
-const Home = () => {
+const Home = ({ toggleTimeline }) => {
   return (
     <>
       <HeroSection />
-      <AboutMe />
+      <AboutMe toggleTimeline={toggleTimeline} />
       <BodySection {...reactObject} />
       <BodySection {...codeObject} />
       <Cards />
