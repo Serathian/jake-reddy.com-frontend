@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 import { FaTimes } from 'react-icons/fa'
+import { colorPallet } from '../../assets/ColorPallet'
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -19,7 +20,7 @@ export const SidebarContainer = styled.aside`
 `
 
 export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+  color: ${colorPallet.secondary};
 `
 
 export const Icon = styled.div`
@@ -30,6 +31,9 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
+  & :hover {
+    color: #fff;
+  }
 `
 
 export const SidebarWrapper = styled.div`
@@ -61,7 +65,7 @@ export const SidebarLink = styled(LinkScroll)`
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: ${colorPallet.accent};
     transition: 0.2s ease-in-out;
   }
 `
@@ -73,7 +77,7 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkRouter)`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${colorPallet.accent};
   white-space: nowrap;
   padding: 16px 64px;
   color: #010606;

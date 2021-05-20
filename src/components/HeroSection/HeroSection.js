@@ -33,20 +33,14 @@ const HeroSection = () => {
         <ImageBackground src={backgroundImg} />
       </HeroBackground>
       <HeroContent>
-        {/* <HeroImage src={heroImg} /> */}
+        <HeroH1>My name's</HeroH1>
         <HeroH1>
-          Hey! my name's <HeroName>Jake Reddy</HeroName>
+          <HeroName>Jake Reddy</HeroName>
         </HeroH1>
         <HeroH1>
           and i'm an aspiring <br></br>
           <HeroJob>{'< fullstack developer >'}</HeroJob>
         </HeroH1>
-        {/* <HeroP>Aspring Fulllstack Developer</HeroP> */}
-        {/* <HeroBtnWrapper>
-          <Button to='/portfolio' accent='true'>
-            Check out my portfolio <ArrowForward />
-          </Button>
-        </HeroBtnWrapper> */}
       </HeroContent>
       <ScrollBarContainer>
         <ScrollArrowWrapper left={true}>

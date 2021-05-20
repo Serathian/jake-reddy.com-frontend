@@ -60,11 +60,11 @@ export const HeroContent = styled.div`
   align-items: flex-end;
 
   @media screen and (max-width: 768px) {
-    align-items: center;
+    align-items: flex-end;
   }
 
   @media screen and (max-width: 480px) {
-    align-items: center;
+    align-items: flex-end;
   }
 `
 export const HeroImage = styled.img`
@@ -93,10 +93,13 @@ export const HeroH1 = styled.h1`
 export const HeroName = styled.span`
   color: ${colorPallet.accent};
   font-family: 'Rock Salt', cursive;
+  font-size: 40px;
 `
+
 export const HeroJob = styled.span`
   color: ${colorPallet.accent};
   font-family: 'IBM Plex Mono', monospace;
+  font-size: 40px;
 `
 export const HeroP = styled.p`
   margin-top: 24px;

@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { colorPallet } from '../../assets/ColorPallet'
 
 export const CardsContaier = styled.div`
-  height: 800px;
+  /* height: 800px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +25,7 @@ export const CardsWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
-  padding: 0 50px;
+  padding: 50px 50px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;

@@ -47,7 +47,8 @@ const AboutMe = ({ toggleTimeline }) => {
             </AboutMeP>
             <AboutMeP>
               I havent been sitting idlely for 12 months, Check out my study
-              timeline - click the button below!
+              timeline <br></br>
+              <AccentText>click the button below!</AccentText>
             </AboutMeP>
             <TimeLineBtnWrapper>
               <Button accent={true} onClick={toggleTimeline}>

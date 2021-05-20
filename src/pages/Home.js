@@ -11,9 +11,9 @@ const Home = ({ toggleTimeline }) => {
     <>
       <HeroSection />
       <AboutMe toggleTimeline={toggleTimeline} />
+      <Cards />
       <BodySection {...reactObject} />
       <BodySection {...codeObject} />
-      <Cards />
     </>
   )
 }
