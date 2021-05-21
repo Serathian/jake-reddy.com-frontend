@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar'
 import { Sidebar } from './components/Sidebar/Sidebar'
 import Footer from './components/Footer/Footer.js'
 import TimelinePopup from './components/TimelinePopup/TimelinePopup.js'
+import TradRackCalculator from './pages/TradRackCalculator.js'
 
 function App() {
   //Sidebar logic and state
@@ -39,6 +40,7 @@ function App() {
             <Home toggleTimeline={toggleTimeline} />{' '}
           </Route>
           <Route exact path='/contact' component={ContactMe} />
+          <Route exact path='/tradrack' component={TradRackCalculator} />
         </Switch>
         <Footer />
       </Router>
