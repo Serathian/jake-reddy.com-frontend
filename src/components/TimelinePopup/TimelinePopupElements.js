@@ -25,7 +25,7 @@ export const TimeLinePopupWrapper = styled.div`
   /* background-color: ${colorPallet.popupBackground}; */
   border-radius: 2.5%;
   z-index: 1002;
-  width: 70%;
+  width: 85%;
   height: 95%;
   margin: auto;
   overflow-y: auto;
@@ -50,9 +50,16 @@ export const TimelinePopupBtn = styled.button`
   outline: none;
   border: none;
   cursor: pointer;
+  z-index: 1009;
 
   &:hover {
     transition: all 0.2s ease-in-out;
     background: white;
+  }
+
+  @media screen and (max-width: 760px) {
+    top: unset;
+    bottom: 2%;
+    right: 5%;
   }
 `

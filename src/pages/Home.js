@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection/HeroSection'
-import { reactObject, codeObject } from '../components/BodySection/Data'
+import { kksObject, moreObject } from '../components/BodySection/Data'
 import BodySection from '../components/BodySection/BodySection'
 
 import Cards from '../components/Cards/Cards'
@@ -12,8 +12,10 @@ const Home = ({ toggleTimeline }) => {
       <HeroSection />
       <AboutMe toggleTimeline={toggleTimeline} />
       <Cards />
-      <BodySection {...reactObject} />
-      <BodySection {...codeObject} />
+      <div id='portfolio'>
+        <BodySection {...kksObject} />
+        <BodySection {...moreObject} />
+      </div>
     </>
   )
 }

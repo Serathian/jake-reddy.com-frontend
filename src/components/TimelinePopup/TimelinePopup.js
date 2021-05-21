@@ -13,7 +13,7 @@ const TimelinePopup = ({ timelineIsOpen, toggleTimeline }) => {
     return (
       <TimelinePopupContainer>
         <TimelinePopupBg onClick={toggleTimeline}></TimelinePopupBg>
-        <TimeLinePopupWrapper>
+        <TimeLinePopupWrapper onClick={toggleTimeline}>
           <TimelinePopupBtn onClick={toggleTimeline}>X</TimelinePopupBtn>
           <VerticalTimelineComponent />
         </TimeLinePopupWrapper>

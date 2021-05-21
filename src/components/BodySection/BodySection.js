@@ -1,4 +1,4 @@
-import { Button } from '../ButtonElement'
+import { HrefButton } from '../ButtonElement'
 import React from 'react'
 import {
   BodyContainer,
@@ -24,10 +24,12 @@ const BodySection = ({
   lightTextDesc,
   desciption,
   buttonLabel,
+  href,
   img,
   alt,
   primary,
   imgStart,
+  show,
 }) => {
   return (
     <>
@@ -40,16 +42,14 @@ const BodySection = ({
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{desciption}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to='/'
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    accent={primary ? 1 : 0}>
+                  <HrefButton
+                    href={href}
+                    target='_blank'
+                    aria-label='kuopion kiipeily seura'
+                    accent={primary ? 1 : 0}
+                    show={show}>
                     {buttonLabel}
-                  </Button>
+                  </HrefButton>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

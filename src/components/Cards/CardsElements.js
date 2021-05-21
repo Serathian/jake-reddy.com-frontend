@@ -65,11 +65,18 @@ export const CardIcon = styled.img`
 export const CardsContainerTitle = styled.h1`
   font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 64px;
+  margin-bottom: 5px;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
+`
+
+export const CardsContainerSubtitle = styled.h3`
+  color: ${colorPallet.accent};
+  font-size: 1rem;
+  font-family: 'Rock Salt', cursive;
+  margin: 5px 0 10px 0;
 `
 
 export const CardH2 = styled.h2`
