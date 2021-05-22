@@ -17,6 +17,13 @@ import heroImg from '../../assets/images/heroImg.jpg'
 import { Button } from '../ButtonElement'
 
 const AboutMe = ({ toggleTimeline }) => {
+  const dateStart = new Date('2020-04-15')
+  const currentDate = new Date()
+
+  const daysSinceStart = Math.ceil(
+    Math.abs(currentDate - dateStart) / (1000 * 60 * 60 * 24)
+  )
+
   return (
     <AboutMeContainer id='about-me'>
       <AboutMeWrapper>
@@ -39,14 +46,15 @@ const AboutMe = ({ toggleTimeline }) => {
           <TextColum>
             <AboutMeP>
               In April 2020 - COVID-19 left me redundant from my previous
-              employment as a Restruant management.
+              employment as a Restruant manager.
             </AboutMeP>
             <AboutMeP>
-              When one door closes another opens, now with abundant amount of
+              When one door closes another opens, now with an abundant amount of
               free time the door is open for me to pursue a career in code.
             </AboutMeP>
             <AboutMeP>
-              I havent been sitting idlely for 12 months, Check out my study
+              I havent been sitting idlely for{' '}
+              <AccentText>{daysSinceStart} days</AccentText>, Check out my study
               timeline <br></br>
               <AccentText>click the button below!</AccentText>
             </AboutMeP>

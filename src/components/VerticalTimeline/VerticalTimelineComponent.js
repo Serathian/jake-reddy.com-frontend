@@ -30,7 +30,11 @@ const VerticalTimelineComponent = () => {
         className='vertical-timeline-element--self-study'
         date='April 2020'
         iconStyle={{ background: colorPallet.accent, color: '#fff' }}
-        icon={<GiRoad />}>
+        icon={<GiRoad />}
+        contentStyle={{
+          borderTop: `5px solid ${colorPallet.accent}`,
+        }}
+        position={'right'}>
         <h3 className='vertical-timeline-element-title'>My Journey Begins!</h3>
         <StyledP>
           After being made redundant, I picked myself up and set off to find new
@@ -42,8 +46,12 @@ const VerticalTimelineComponent = () => {
       <StyledVerticalTimelineElement
         className='vertical-timeline-element--self-study'
         date='April 2020'
-        iconStyle={{ background: colorPallet.accent, color: '#fff' }}
-        icon={<FaWordpressSimple />}>
+        iconStyle={{ background: colorPallet.content1, color: '#fff' }}
+        icon={<FaWordpressSimple />}
+        contentStyle={{
+          borderTop: `5px solid ${colorPallet.content1}`,
+        }}
+        position={'left'}>
         <h3 className='vertical-timeline-element-title'>
           <StyledLink
             href='https://www.kuopionkiipeilyseura.fi/'
@@ -63,7 +71,11 @@ const VerticalTimelineComponent = () => {
         className='vertical-timeline-element--self-study'
         date='May 2020'
         iconStyle={{ background: colorPallet.primary, color: '#fff' }}
-        icon={<TiCodeOutline />}>
+        icon={<TiCodeOutline />}
+        contentStyle={{
+          borderTop: `5px solid ${colorPallet.primary}`,
+        }}
+        position={'right'}>
         <h3 className='vertical-timeline-element-title'>
           <StyledLink
             href='https://www.codecademy.com/learn/learn-c-sharp'
@@ -82,7 +94,11 @@ const VerticalTimelineComponent = () => {
         className='vertical-timeline-element--self-study'
         date='June 2020'
         iconStyle={{ background: 'red', color: '#fff' }}
-        icon={<TiSocialYoutube />}>
+        icon={<TiSocialYoutube />}
+        contentStyle={{
+          borderTop: `5px solid red`,
+        }}
+        position={'left'}>
         <h3 className='vertical-timeline-element-title'>
           <StyledLink
             href='https://www.youtube.com/watch?v=fis26HvvDII'
@@ -102,7 +118,11 @@ const VerticalTimelineComponent = () => {
         className='vertical-timeline-element--self-study'
         date='July 2020'
         iconStyle={{ background: 'green', color: '#fff' }}
-        icon={<TiVendorAndroid />}>
+        icon={<TiVendorAndroid />}
+        contentStyle={{
+          borderTop: `5px solid green`,
+        }}
+        position={'right'}>
         <h3 className='vertical-timeline-element-title'>
           <StyledLink
             href='https://courses.meicode.org/courses/android2020'
@@ -125,7 +145,8 @@ const VerticalTimelineComponent = () => {
         contentArrowStyle={{
           borderRight: `7px solid ${colorPallet.primary}`,
         }}
-        icon={<TiMortarBoard />}>
+        icon={<TiMortarBoard />}
+        position={'left'}>
         <h3 className='vertical-timeline-element-title'>
           <StyledLink
             href='https://h2c.fi/'
@@ -290,10 +311,10 @@ const VerticalTimelineComponent = () => {
         date='April 2021'
         iconStyle={{ background: 'red', color: '#fff' }}
         contentStyle={{
-          borderTop: `5px solid ${colorPallet.primary}`,
+          borderTop: `5px solid red`,
         }}
         icon={<TiSocialYoutube />}
-        position={'left'}>
+        position={'right'}>
         <h3 className='vertical-timeline-element-title'>
           <StyledLink
             href='https://www.youtube.com/watch?v=2LhoCfjm8R4'
@@ -314,7 +335,7 @@ const VerticalTimelineComponent = () => {
         date='May 2021'
         iconStyle={{ background: colorPallet.secondary, color: '#fff' }}
         contentStyle={{
-          borderTop: `5px solid ${colorPallet.primary}`,
+          borderTop: `5px solid ${colorPallet.secondary}`,
         }}
         icon={<TiInputChecked />}
         position={'left'}>
