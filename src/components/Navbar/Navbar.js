@@ -13,7 +13,7 @@ import {
   NavBtnLink,
 } from './NavbarElements'
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggleContactPopup, toggleSidebar }) => {
   const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
@@ -35,7 +35,7 @@ const Navbar = ({ toggle }) => {
           <NavLogo to='/' onClick={() => scroll.scrollToTop()}>
             {'< J R >'}
           </NavLogo>
-          <MobileIcon onClick={toggle}>
+          <MobileIcon onClick={toggleSidebar}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavBtn>
-              <NavBtnLink to='/contact'>Contact Me</NavBtnLink>
+              <NavBtnLink onClick={toggleContactPopup}>Contact Me</NavBtnLink>
             </NavBtn>
           </NavMenu>
         </NavbarContainer>

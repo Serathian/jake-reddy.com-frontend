@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro'
 import { colorPallet } from '../../assets/ColorPallet'
 
-export const TimelinePopupContainer = styled.div`
+export const FullScreenPopupContainer = styled.div`
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -13,7 +13,7 @@ export const TimelinePopupContainer = styled.div`
   transition: 0.3s ease-in-out;
 `
 
-export const TimelinePopupBg = styled.div`
+export const FullScreenPopupBg = styled.div`
   position: fixed;
   z-index: 1001;
   background: #0d0d0d;
@@ -21,7 +21,7 @@ export const TimelinePopupBg = styled.div`
   height: 100%;
   width: 100%;
 `
-export const TimeLinePopupWrapper = styled.div`
+export const FullScreenPopupWrapper = styled.div`
   /* background-color: ${colorPallet.popupBackground}; */
   border-radius: 2.5%;
   z-index: 1002;
@@ -37,7 +37,7 @@ export const TimeLinePopupWrapper = styled.div`
     display: none;
   }
 `
-export const TimelinePopupBtn = styled.button`
+export const FullScreenPopupBtn = styled.button`
   position: fixed;
   top: 1.25%;
   right: 14%;
