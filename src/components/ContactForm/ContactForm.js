@@ -7,8 +7,9 @@ import {
   ContactTextField,
   ContactButtonWrapper,
   ContactButton,
+  StyledReCAPTCHA,
 } from './ContactFormElements'
-import { ToastContainer, toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 const ContactForm = ({ togglePopup }) => {
@@ -16,6 +17,11 @@ const ContactForm = ({ togglePopup }) => {
   const [name, setName] = useState(null)
   const [email, setEmail] = useState(null)
   const [message, setMessage] = useState(null)
+  const { REACT_APP_RECAPTCHA_SITE_KEY } = process.env
+
+  const handleCaptcha = (value) => {
+    console.log(value)
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -72,6 +78,10 @@ const ContactForm = ({ togglePopup }) => {
           rows={5}
           autoComplete='none'
           onChange={(e) => setMessage(e.target.value)}
+        />
+        <StyledReCAPTCHA
+          sitekey={REACT_APP_RECAPTCHA_SITE_KEY}
+          onChange={handleCaptcha}
         />
         <ContactButtonWrapper>
           <ContactButton type='submit'>{status}</ContactButton>

@@ -2,6 +2,7 @@ import styled from 'styled-components/macro'
 import TextField from '@material-ui/core/TextField'
 import { Button } from '../ButtonElement'
 import { colorPallet } from '../../assets/ColorPallet'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 export const ContactFormContainer = styled.div`
   height: 100%;
@@ -38,3 +39,7 @@ export const ContactButtonWrapper = styled.div`
   margin-top: 20px;
 `
 export const ContactButton = styled(Button)``
+
+export const StyledReCAPTCHA = styled(ReCAPTCHA)`
+  margin-top: 20px;
+`
