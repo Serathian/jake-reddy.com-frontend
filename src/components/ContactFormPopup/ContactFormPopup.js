@@ -6,7 +6,7 @@ const ContactFormPopup = ({ contactIsOpen, toggleContact }) => {
   return (
     <div>
       <FullScreenPopup popupIsOpen={contactIsOpen} togglePopup={toggleContact}>
-        <ContactForm />
+        <ContactForm togglePopup={toggleContact} />
       </FullScreenPopup>
     </div>
   )

@@ -22,10 +22,9 @@ export const FullScreenPopupBg = styled.div`
   width: 100%;
 `
 export const FullScreenPopupWrapper = styled.div`
-  /* background-color: ${colorPallet.popupBackground}; */
   border-radius: 2.5%;
   z-index: 1002;
-  width: 85%;
+  width: fit-content;
   height: 95%;
   margin: auto;
   overflow-y: auto;

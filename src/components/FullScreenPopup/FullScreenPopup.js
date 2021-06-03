@@ -12,7 +12,7 @@ const FullScreenPopup = ({ children, popupIsOpen, togglePopup }) => {
       <div>
         <FullScreenPopupContainer>
           <FullScreenPopupBg onClick={togglePopup}></FullScreenPopupBg>
-          <FullScreenPopupWrapper onClick={togglePopup}>
+          <FullScreenPopupWrapper>
             <FullScreenPopupBtn onClick={togglePopup}>X</FullScreenPopupBtn>
             {children}
           </FullScreenPopupWrapper>

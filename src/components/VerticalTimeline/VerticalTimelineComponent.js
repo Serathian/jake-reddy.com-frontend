@@ -329,6 +329,30 @@ const VerticalTimelineComponent = () => {
         </StyledP>
       </StyledVerticalTimelineElement>
 
+      {/* Freecodecamp - Responsive Web Dev*/}
+      <StyledVerticalTimelineElement
+        className='vertical-timeline-element--h2c-fullstack-starts'
+        date='May 2021'
+        iconStyle={{ background: '#0A0A23', color: '#fff' }}
+        contentStyle={{
+          borderTop: `5px solid #0A0A23`,
+        }}
+        icon={<TiCodeOutline />}
+        position={'left'}>
+        <h3 className='vertical-timeline-element-title'>
+          <StyledLink
+            href='https://freecodecamp.org/certification/fcc19ce22e3-7818-4c46-810c-72c6399e4209/responsive-web-design'
+            target='_blank'
+            aria-label='Freecodemap.org'>
+            Freecodecamp.org - Responsive Web Dev
+          </StyledLink>
+        </h3>
+
+        <StyledP>
+          Focusing on my weaknesses, I wanted to learn more CSS.
+        </StyledP>
+      </StyledVerticalTimelineElement>
+
       {/* Jakereddy.com*/}
       <StyledVerticalTimelineElement
         className='vertical-timeline-element--h2c-fullstack-starts'
@@ -338,7 +362,7 @@ const VerticalTimelineComponent = () => {
           borderTop: `5px solid ${colorPallet.secondary}`,
         }}
         icon={<TiInputChecked />}
-        position={'left'}>
+        position={'right'}>
         <h3 className='vertical-timeline-element-title'>Jake-reddy.com</h3>
 
         <StyledP>

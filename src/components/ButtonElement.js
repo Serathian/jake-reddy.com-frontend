@@ -27,7 +27,7 @@ export const LinkButton = styled(Link)`
 export const Button = styled.button`
   border-radius: 50px;
   background: ${({ accent }) =>
-    accent ? colorPallet.accent : colorPallet.primary};
+    accent ? colorPallet.accent : colorPallet.secondary};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
   color: ${({ accent }) => (accent ? '#010606' : '#fff')};
@@ -43,7 +43,7 @@ export const Button = styled.button`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ accent }) => (accent ? '#ffff' : colorPallet.secondary)};
+    background: ${({ accent }) => (accent ? '#ffff' : '#b9b9b9')};
   }
 `
 

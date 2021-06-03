@@ -1,17 +1,31 @@
+import { formatMs, styled } from '@material-ui/core'
 import React, { useState } from 'react'
+import {
+  ContactFormContainer,
+  ContactFormWrapper,
+  StyledContactForm,
+  ContactTextField,
+  ContactButtonWrapper,
+  ContactButton,
+} from './ContactFormElements'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
-const ContactForm = () => {
-  const [status, setStatus] = useState('Submit')
+const ContactForm = ({ togglePopup }) => {
+  const [status, setStatus] = useState('Send!')
+  const [name, setName] = useState(null)
+  const [email, setEmail] = useState(null)
+  const [message, setMessage] = useState(null)
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     setStatus('Sending...')
-    const { name, email, message } = e.target.elements
     let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
+      name: name,
+      email: email,
+      message: message,
     }
-    let response = await fetch('http://localhost:5000/contact', {
+    let response = await fetch('http://localhost:3002/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
@@ -20,24 +34,50 @@ const ContactForm = () => {
     })
     setStatus('Submit')
     let result = await response.json()
-    alert(result.status)
+
+    if (result.sent) {
+      toast.success('Message Sent!', {
+        position: 'top-center',
+        autoClose: 2000,
+      })
+      togglePopup()
+    } else {
+      toast.error('Something went wrong, try again.', {
+        position: 'top-center',
+        autoClose: 2000,
+      })
+    }
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor='name'>Name:</label>
-        <input type='text' id='name' required />
-      </div>
-      <div>
-        <label htmlFor='email'>Email:</label>
-        <input type='email' id='email' required />
-      </div>
-      <div>
-        <label htmlFor='message'>Message:</label>
-        <textarea id='message' required />
-      </div>
-      <button type='submit'>{status}</button>
-    </form>
+    <ContactFormContainer>
+      <StyledContactForm onSubmit={handleSubmit}>
+        <h3>What are you waiting for?</h3>
+        <ContactTextField
+          label='Full Name'
+          type='text'
+          autoComplete='none'
+          onChange={(e) => setName(e.target.value)}
+        />
+        <ContactTextField
+          label='Email'
+          type='email'
+          id='email'
+          autoComplete='none'
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <ContactTextField
+          label='Message'
+          id='email'
+          multiline
+          rows={5}
+          autoComplete='none'
+          onChange={(e) => setMessage(e.target.value)}
+        />
+        <ContactButtonWrapper>
+          <ContactButton type='submit'>{status}</ContactButton>
+        </ContactButtonWrapper>
+      </StyledContactForm>
+    </ContactFormContainer>
   )
 }
 

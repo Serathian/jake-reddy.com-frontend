@@ -7,6 +7,8 @@ import Footer from './components/Footer/Footer.js'
 import VerticalTimelinePopup from './components/VerticalTimelinePopup/VerticalTimelinePopup.js'
 import TradRackCalculator from './pages/TradRackCalculator.js'
 import ContactFormPopup from './components/ContactFormPopup/ContactFormPopup.js'
+import { StylesProvider } from '@material-ui/core/styles'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   //Sidebar logic and state
@@ -22,7 +24,6 @@ function App() {
   const toggleContactPopup = () => setContactIsOpen(!contactIsOpen)
 
   //Stops background scroll when timeline is open
-
   useEffect(() => {
     const popupIsOpen = () => {
       if (timelineIsOpen || contactIsOpen) {
@@ -32,7 +33,7 @@ function App() {
       }
     }
 
-    if (popupIsOpen) {
+    if (popupIsOpen()) {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = 'unset'
@@ -41,29 +42,32 @@ function App() {
 
   return (
     <>
-      <Router>
-        <ContactFormPopup
-          contactIsOpen={contactIsOpen}
-          toggleContact={toggleContactPopup}
-        />
+      <ToastContainer />
+      <StylesProvider injectFirst>
+        <Router>
+          <ContactFormPopup
+            contactIsOpen={contactIsOpen}
+            toggleContact={toggleContactPopup}
+          />
 
-        <VerticalTimelinePopup
-          timelineIsOpen={timelineIsOpen}
-          toggleTimeline={toggleTimeline}
-        />
-        <Sidebar isOpen={sidebarIsOpen} toggle={toggleSidebar} />
-        <Navbar
-          toggleSidebar={toggleSidebar}
-          toggleContactPopup={toggleContactPopup}
-        />
-        <Switch>
-          <Route exact path='/'>
-            <Home toggleTimeline={toggleTimeline} />{' '}
-          </Route>
-          <Route exact path='/tradrack' component={TradRackCalculator} />
-        </Switch>
-        <Footer />
-      </Router>
+          <VerticalTimelinePopup
+            timelineIsOpen={timelineIsOpen}
+            toggleTimeline={toggleTimeline}
+          />
+          <Sidebar isOpen={sidebarIsOpen} toggle={toggleSidebar} />
+          <Navbar
+            toggleSidebar={toggleSidebar}
+            toggleContactPopup={toggleContactPopup}
+          />
+          <Switch>
+            <Route exact path='/'>
+              <Home toggleTimeline={toggleTimeline} />{' '}
+            </Route>
+            <Route exact path='/tradrack' component={TradRackCalculator} />
+          </Switch>
+          <Footer />
+        </Router>
+      </StylesProvider>
     </>
   )
 }
