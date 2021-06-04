@@ -92,3 +92,12 @@ export const ContactCaptchaWrapper = styled.div`
 export const ContactReCAPTCHA = styled(ReCAPTCHA)`
   margin-top: 20px;
 `
+export const ContactError = styled.div`
+  color: #f44336;
+  font-size: 0.75rem;
+  margin-top: 3px;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+`

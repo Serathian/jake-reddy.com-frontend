@@ -75,11 +75,11 @@ export const SideBtnWrap = styled.div`
   justify-content: center;
 `
 
-export const SidebarRoute = styled(LinkRouter)`
+export const SideBtn = styled.button`
   border-radius: 50px;
   background: ${colorPallet.accent};
   white-space: nowrap;
-  padding: 16px 64px;
+  padding: 10px 22px;
   color: #010606;
   font-size: 16px;
   outline: none;

@@ -54,7 +54,11 @@ function App() {
             timelineIsOpen={timelineIsOpen}
             toggleTimeline={toggleTimeline}
           />
-          <Sidebar isOpen={sidebarIsOpen} toggle={toggleSidebar} />
+          <Sidebar
+            isOpen={sidebarIsOpen}
+            toggle={toggleSidebar}
+            toggleContactPopup={toggleContactPopup}
+          />
           <Navbar
             toggleSidebar={toggleSidebar}
             toggleContactPopup={toggleContactPopup}

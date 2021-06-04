@@ -9,8 +9,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavBtnWrapper,
   NavBtn,
-  NavBtnLink,
 } from './NavbarElements'
 
 const Navbar = ({ toggleContactPopup, toggleSidebar }) => {
@@ -72,9 +72,9 @@ const Navbar = ({ toggleContactPopup, toggleSidebar }) => {
                 Portfolio
               </NavLinks>
             </NavItem>
-            <NavBtn>
-              <NavBtnLink onClick={toggleContactPopup}>Contact Me</NavBtnLink>
-            </NavBtn>
+            <NavBtnWrapper>
+              <NavBtn onClick={toggleContactPopup}>Contact Me</NavBtn>
+            </NavBtnWrapper>
           </NavMenu>
         </NavbarContainer>
       </Nav>

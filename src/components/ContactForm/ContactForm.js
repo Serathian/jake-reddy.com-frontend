@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import {
   ContactFormContainer,
   ContactHeader,
@@ -11,6 +11,7 @@ import {
   ContactButton,
   ContactCaptchaWrapper,
   ContactReCAPTCHA,
+  ContactError,
 } from './ContactFormElements'
 import { toast } from 'react-toastify'
 import * as Yup from 'yup'
@@ -37,11 +38,19 @@ const ContactForm = ({ togglePopup }) => {
   //const [name, setName] = useState(null)
   //const [email, setEmail] = useState(null)
   //const [message, setMessage] = useState(null)
+  const [captchaKey, setCaptchaValue] = useState(null)
   const { REACT_APP_RECAPTCHA_SITE_KEY } = process.env
 
-  // const handleCaptcha = (value) => {
-  //   console.log(value)
-  // }
+  const recaptchaRef = useRef()
+
+  const handleCaptcha = (captchaKey) => {
+    setCaptchaValue(captchaKey)
+  }
+
+  const getCaptchaKey = () => {
+    console.log('getCaptchKey Called!')
+    recaptchaRef.current.execute()
+  }
 
   const handleSubmit = async (values) => {
     setStatus('Parsing Data...')
@@ -50,6 +59,7 @@ const ContactForm = ({ togglePopup }) => {
       name: firstName + ' ' + lastName,
       email,
       message,
+      captchaKey,
     }
     setStatus('Sending...')
     try {
@@ -94,7 +104,17 @@ const ContactForm = ({ togglePopup }) => {
     },
     validationSchema: ContactSchema,
     onSubmit: (values) => {
-      handleSubmit(values)
+      getCaptchaKey()
+      if (captchaKey != null) {
+        console.log(captchaKey)
+        handleSubmit(values)
+      } else {
+        console.log('captchaKey is NULL')
+        toast.error('Failed to verify reCAPTCHA, try again.', {
+          position: 'top-center',
+          autoClose: 2000,
+        })
+      }
     },
   })
 
@@ -131,6 +151,7 @@ const ContactForm = ({ togglePopup }) => {
           onChange={formik.handleChange}
           error={formik.touched.email && Boolean(formik.errors.email)}
           helperText={formik.touched.email && formik.errors.email}
+          onBlur={getCaptchaKey}
         />
         <ContactMessageField
           label='Message'
@@ -143,12 +164,18 @@ const ContactForm = ({ togglePopup }) => {
           error={formik.touched.message && Boolean(formik.errors.message)}
           helperText={formik.touched.message && formik.errors.message}
         />
-        <ContactCaptchaWrapper>
-          <ContactReCAPTCHA
-            sitekey={REACT_APP_RECAPTCHA_SITE_KEY}
-            //onChange={handleCaptcha}
-          />
-        </ContactCaptchaWrapper>
+        {/* <ContactCaptchaWrapper> */}
+        <ContactReCAPTCHA
+          sitekey={REACT_APP_RECAPTCHA_SITE_KEY}
+          ref={recaptchaRef}
+          size='invisible'
+          badge='bottomleft'
+          onChange={handleCaptcha}
+        />
+        {/* {formik.errors.captcha ? (
+            <ContactError>{formik.errors.captcha}</ContactError>
+          ) : null} */}
+        {/* </ContactCaptchaWrapper> */}
 
         <ContactButtonWrapper>
           <ContactButton

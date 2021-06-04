@@ -101,7 +101,7 @@ export const NavLinks = styled(LinkScroll)`
   }
 `
 
-export const NavBtn = styled.nav`
+export const NavBtnWrapper = styled.nav`
   display: flex;
   align-items: center;
 
@@ -110,7 +110,7 @@ export const NavBtn = styled.nav`
   }
 `
 
-export const NavBtnLink = styled(LinkRouter)`
+export const NavBtn = styled.button`
   border-radius: 50px;
   background: ${colorPallet.accent};
   white-space: nowrap;

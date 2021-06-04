@@ -7,10 +7,10 @@ import {
   SidebarMenu,
   SidebarLink,
   SideBtnWrap,
-  SidebarRoute,
+  SideBtn,
 } from './SidebarElements'
 
-export const Sidebar = ({ isOpen, toggle }) => {
+export const Sidebar = ({ isOpen, toggle, toggleContactPopup }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -18,15 +18,38 @@ export const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='/about' onClick={toggle}>
+          <SidebarLink
+            to='about-me'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            onClick={toggle}>
             About
           </SidebarLink>
-          <SidebarLink to='/portfolio' onClick={toggle}>
-            portfolio
+          <SidebarLink
+            to='knowledge'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
+            onClick={toggle}>
+            My knowledge
+          </SidebarLink>
+          <SidebarLink
+            to='portfolio'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
+            onClick={toggle}>
+            Portfolio
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to='/contact'>Contact Me</SidebarRoute>
+          <SideBtn onClick={toggleContactPopup}>Contact Me</SideBtn>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
