@@ -9,6 +9,8 @@ import TradRackCalculator from './pages/TradRackCalculator.js'
 import ContactFormPopup from './components/ContactFormPopup/ContactFormPopup.js'
 import { StylesProvider } from '@material-ui/core/styles'
 import { ToastContainer } from 'react-toastify'
+import TermsAndConditions from './pages/TermsAndConditions.js'
+import ScrollToTop from './utils/ScrollToTop.js'
 
 function App() {
   //Sidebar logic and state
@@ -45,6 +47,8 @@ function App() {
       <ToastContainer />
       <StylesProvider injectFirst>
         <Router>
+          <ScrollToTop />
+
           <ContactFormPopup
             contactIsOpen={contactIsOpen}
             toggleContact={toggleContactPopup}
@@ -68,6 +72,7 @@ function App() {
               <Home toggleTimeline={toggleTimeline} />{' '}
             </Route>
             <Route exact path='/tradrack' component={TradRackCalculator} />
+            <Route exact path='/terms' component={TermsAndConditions} />
           </Switch>
           <Footer />
         </Router>

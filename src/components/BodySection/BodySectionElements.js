@@ -6,9 +6,9 @@ export const BodyContainer = styled.div`
   background: ${({ lightBg }) =>
     lightBg ? colorPallet.content1 : colorPallet.content2};
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     padding: 100px 0;
-  }
+  } */
 `
 
 export const BodyWrapper = styled.div`
@@ -19,7 +19,6 @@ export const BodyWrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  //padding: 0 24px;
   justify-content: center;
 `
 

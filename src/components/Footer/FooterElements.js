@@ -27,7 +27,6 @@ export const FooterLinksContainer = styled.div`
 
 export const FooterLinksColumn = styled.div`
   display: flex;
-
   @media screen and (max-width: 820px) {
     flex-direction: column;
   }
@@ -35,11 +34,13 @@ export const FooterLinksColumn = styled.div`
 
 export const FooterLinksBlock = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
   margin: 16px;
   text-align: left;
-  width: 160px;
+  width: fit-content;
   box-sizing: border-box;
   color: #fff;
 
@@ -57,7 +58,7 @@ export const FooterLinkTitle = styled.h1`
 export const FooterLink = styled(Link)`
   color: #fff;
   text-decoration: none;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem;
   font-size: 14px;
 
   &:hover {

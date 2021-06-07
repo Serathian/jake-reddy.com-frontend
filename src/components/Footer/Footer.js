@@ -22,30 +22,10 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksColumn>
             <FooterLinksBlock>
-              <FooterLinkTitle>Footer</FooterLinkTitle>
-              <FooterLink>Link 1</FooterLink>
-              <FooterLink>Link 2</FooterLink>
-              <FooterLink>Link 3</FooterLink>
-            </FooterLinksBlock>
-            <FooterLinksBlock>
-              <FooterLinkTitle>Footer</FooterLinkTitle>
-              <FooterLink>Link 1</FooterLink>
-              <FooterLink>Link 2</FooterLink>
-              <FooterLink>Link 3</FooterLink>
-            </FooterLinksBlock>
-          </FooterLinksColumn>
-          <FooterLinksColumn>
-            <FooterLinksBlock>
-              <FooterLinkTitle>Footer</FooterLinkTitle>
-              <FooterLink>Link 1</FooterLink>
-              <FooterLink>Link 2</FooterLink>
-              <FooterLink>Link 3</FooterLink>
-            </FooterLinksBlock>
-            <FooterLinksBlock>
-              <FooterLinkTitle>Footer</FooterLinkTitle>
-              <FooterLink>Link 1</FooterLink>
-              <FooterLink>Link 2</FooterLink>
-              <FooterLink>Link 3</FooterLink>
+              <FooterLink to='/blog'>My Blog</FooterLink>
+              <FooterLink to='/projects'>Projects</FooterLink>
+              <FooterLink to='/more-about-me'>More About Me</FooterLink>
+              <FooterLink to='/terms'>Terms and Conditions</FooterLink>
             </FooterLinksBlock>
           </FooterLinksColumn>
         </FooterLinksContainer>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { animateScroll as scroll } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
 import {
@@ -8,12 +9,15 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
+  NavScrollLinks,
   NavLinks,
   NavBtnWrapper,
   NavBtn,
 } from './NavbarElements'
 
 const Navbar = ({ toggleContactPopup, toggleSidebar }) => {
+  const location = useLocation()
+
   const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
@@ -35,43 +39,63 @@ const Navbar = ({ toggleContactPopup, toggleSidebar }) => {
           <NavLogo to='/' onClick={() => scroll.scrollToTop()}>
             {'< J R >'}
           </NavLogo>
-          <MobileIcon onClick={toggleSidebar}>
-            <FaBars />
-          </MobileIcon>
+
           <NavMenu>
-            <NavItem>
-              <NavLinks
-                to='about-me'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-80}>
-                About Me
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to='knowledge'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-80}>
-                My knowledge
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to='portfolio'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-80}>
-                Portfolio
-              </NavLinks>
-            </NavItem>
+            {location.pathname === '/' ? (
+              <>
+                <MobileIcon onClick={toggleSidebar}>
+                  <FaBars />
+                </MobileIcon>
+                <NavItem>
+                  <NavScrollLinks
+                    to='about-me'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}>
+                    About Me
+                  </NavScrollLinks>
+                </NavItem>
+                <NavItem>
+                  <NavScrollLinks
+                    to='knowledge'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}>
+                    My knowledge
+                  </NavScrollLinks>
+                </NavItem>
+                <NavItem>
+                  <NavScrollLinks
+                    to='portfolio'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}>
+                    Portfolio
+                  </NavScrollLinks>
+                </NavItem>
+              </>
+            ) : (
+              <>
+                <NavItem>
+                  <NavLinks
+                    to='/'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}>
+                    Go Back
+                  </NavLinks>
+                </NavItem>
+              </>
+            )}
+
             <NavBtnWrapper>
               <NavBtn onClick={toggleContactPopup}>Contact Me</NavBtn>
             </NavBtnWrapper>
