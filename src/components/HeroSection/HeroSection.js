@@ -3,27 +3,17 @@ import {
   HeroContainer,
   HeroBackground,
   VideoOverlay,
-  VideoBackground,
   ImageBackground,
   HeroContent,
-  HeroImage,
   HeroH1,
   HeroName,
   HeroJob,
-  HeroP,
-  HeroBtnWrapper,
-  ArrowForward,
   ScrollBarContainer,
   ScrollArrowWrapper,
   ScrollText,
   ArrowDown,
-  ScrollBarContent,
-  ScrollBarBg,
 } from './HeroSectionElements'
-import backgroundVideo from '../../assets/videos/video-1.mp4'
-import heroImg from '../../assets/images/heroImg.jpg'
 import backgroundImg from '../../assets/images/purple-abstract.jpg'
-import { Button } from '../ButtonElement'
 
 const HeroSection = () => {
   return (

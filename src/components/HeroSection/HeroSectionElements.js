@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro'
-import { MdArrowDownward, MdArrowForward } from 'react-icons/md'
+import { MdArrowForward } from 'react-icons/md'
 import { colorPallet } from '../../assets/ColorPallet'
 
 export const HeroContainer = styled.div`

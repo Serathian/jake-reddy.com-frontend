@@ -6,7 +6,6 @@ import {
   FooterLinksContainer,
   FooterLinksColumn,
   FooterLinksBlock,
-  FooterLinkTitle,
   FooterLink,
   SocialMedia,
   SocialMediawrapper,

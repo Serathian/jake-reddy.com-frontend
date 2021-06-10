@@ -9,35 +9,15 @@ import {
   ContactMessageField,
   ContactButtonWrapper,
   ContactButton,
-  ContactCaptchaWrapper,
   ContactReCAPTCHA,
-  ContactError,
 } from './ContactFormElements'
 import { toast } from 'react-toastify'
-import * as Yup from 'yup'
 import { useFormik } from 'formik'
-
-const ContactSchema = Yup.object().shape({
-  firstName: Yup.string()
-    .min(2, 'Too Short!')
-    .max(50, 'Too Long!')
-    .required('Required'),
-  lastName: Yup.string()
-    .min(2, 'Too Short!')
-    .max(50, 'Too Long!')
-    .required('Required'),
-  email: Yup.string().email('Invalid email').required('Required'),
-  message: Yup.string()
-    .min(20, 'Too Short!')
-    .max(150, 'Too Long!')
-    .required('Required'),
-})
+import ContactSchema from '../../schema/contactSchema'
+import { sendContact } from '../../services/contactService'
 
 const ContactForm = ({ togglePopup }) => {
   const [status, setStatus] = useState('Send!')
-  //const [name, setName] = useState(null)
-  //const [email, setEmail] = useState(null)
-  //const [message, setMessage] = useState(null)
   const [captchaKey, setCaptchaValue] = useState(null)
   const { REACT_APP_RECAPTCHA_SITE_KEY } = process.env
 
@@ -48,7 +28,6 @@ const ContactForm = ({ togglePopup }) => {
   }
 
   const getCaptchaKey = () => {
-    console.log('getCaptchKey Called!')
     recaptchaRef.current.execute()
   }
 
@@ -63,17 +42,8 @@ const ContactForm = ({ togglePopup }) => {
     }
     setStatus('Sending...')
     try {
-      let response = await fetch('http://localhost:3002/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json;charset=utf-8',
-        },
-        body: JSON.stringify(details),
-      })
-      setStatus('Submit')
-      let result = await response.json()
-
-      if (result.sent) {
+      let response = await sendContact(details)
+      if (response.sent) {
         toast.success('Message Sent!', {
           position: 'top-center',
           autoClose: 2000,

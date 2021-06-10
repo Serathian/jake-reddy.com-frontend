@@ -14,13 +14,9 @@ import {
   TiVendorAndroid,
   TiMortarBoard,
   TiInputChecked,
-  TiInfo,
-  TiGroupOutline,
 } from 'react-icons/ti'
 import { GiRoad, GiPodiumWinner } from 'react-icons/gi'
 import { FaWordpressSimple } from 'react-icons/fa'
-import { SiAdobexd } from 'react-icons/si'
-import { IoLogoJavascript } from 'react-icons/io'
 
 const VerticalTimelineComponent = () => {
   return (

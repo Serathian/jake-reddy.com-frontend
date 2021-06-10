@@ -40,18 +40,18 @@ const Navbar = ({ toggleContactPopup, toggleSidebar }) => {
             {'< J R >'}
           </NavLogo>
 
+          <MobileIcon onClick={toggleSidebar}>
+            <FaBars />
+          </MobileIcon>
           <NavMenu>
             {location.pathname === '/' ? (
               <>
-                <MobileIcon onClick={toggleSidebar}>
-                  <FaBars />
-                </MobileIcon>
                 <NavItem>
                   <NavScrollLinks
                     to='about-me'
-                    smooth={true}
+                    smooth='true'
                     duration={500}
-                    spy={true}
+                    spy='true'
                     exact='true'
                     offset={-80}>
                     About Me
@@ -60,9 +60,9 @@ const Navbar = ({ toggleContactPopup, toggleSidebar }) => {
                 <NavItem>
                   <NavScrollLinks
                     to='knowledge'
-                    smooth={true}
+                    smooth='true'
                     duration={500}
-                    spy={true}
+                    spy='true'
                     exact='true'
                     offset={-80}>
                     My knowledge
@@ -71,9 +71,9 @@ const Navbar = ({ toggleContactPopup, toggleSidebar }) => {
                 <NavItem>
                   <NavScrollLinks
                     to='portfolio'
-                    smooth={true}
+                    smooth='true'
                     duration={500}
-                    spy={true}
+                    spy='true'
                     exact='true'
                     offset={-80}>
                     Portfolio
@@ -85,9 +85,9 @@ const Navbar = ({ toggleContactPopup, toggleSidebar }) => {
                 <NavItem>
                   <NavLinks
                     to='/'
-                    smooth={true}
+                    smooth='true'
                     duration={500}
-                    spy={true}
+                    spy='true'
                     exact='true'
                     offset={-80}>
                     Go Back
