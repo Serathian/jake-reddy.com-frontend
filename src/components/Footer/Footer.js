@@ -48,7 +48,7 @@ const Footer = () => {
                 <FaInstagram />
               </SocialIconLink>
               <SocialIconLink
-                href='https://www.linkedin.com/in/jake-reddy-104189171/'
+                href='www.linkedin.com/in/jake-reddy'
                 target='_blank'
                 aria-label='Linkedin'>
                 <FaLinkedin />
