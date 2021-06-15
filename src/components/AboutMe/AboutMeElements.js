@@ -86,7 +86,7 @@ export const TextColum = styled.div`
 
 export const TimeLineBtnWrapper = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 `
 export const AccentText = styled.span`
   color: ${colorPallet.accent};
