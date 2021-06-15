@@ -35,13 +35,22 @@ const Footer = () => {
               {'< J R > ' + new Date().getFullYear() + ' All rights reserved'}
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+              <SocialIconLink
+                href='https://www.facebook.com/Jake.A.R/'
+                target='_blank'
+                aria-label='Facebook'>
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+              <SocialIconLink
+                href='https://www.instagram.com/serathian/'
+                target='_blank'
+                aria-label='Instagram'>
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
+              <SocialIconLink
+                href='https://www.linkedin.com/in/jake-reddy-104189171/'
+                target='_blank'
+                aria-label='Linkedin'>
                 <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>
