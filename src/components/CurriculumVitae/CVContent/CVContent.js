@@ -18,11 +18,15 @@ import {
   CVProjectSubtitle,
   CVProjectDescriptionWrapper,
   CVProjectDescription,
+  CVProjectLinksContainer,
   CVGitLinkWrapper,
   CVGitLink,
+  CVDemoLinkWrapper,
+  CVDemoLink,
   CVProfileLogo,
   CVProjectsLogo,
   CVGitLogo,
+  CVDemoLogo,
   CVProjectBreakPoint,
   CVSchoolLogo,
   CVServerLogo,
@@ -32,7 +36,7 @@ import {
 } from './CVContentElements'
 import { cvContentText } from '../../../assets/text/cvText'
 
-const CVContent = ({ langauge = 'english' }) => {
+const CVContent = ({ language = 'english' }) => {
   return (
     <CVContentContainer>
       {/*   Profile   */}
@@ -40,13 +44,14 @@ const CVContent = ({ langauge = 'english' }) => {
         <CVElementTitleWrapper>
           <CVProfileLogo />
           <CVElementTitle>
-            {cvContentText[langauge].profile.title}
+            {cvContentText[language].profile.title}
           </CVElementTitle>
         </CVElementTitleWrapper>
         <CVElementContent>
-          {cvContentText[langauge].profile.content}
+          {cvContentText[language].profile.content}
         </CVElementContent>
       </CVElementContainer>
+      {/* Skills */}
       <CVElementContainer>
         <CVElementTitleWrapper>
           <CVToolBox />
@@ -102,6 +107,7 @@ const CVContent = ({ langauge = 'english' }) => {
           <CVProjectsLogo />
           <CVElementTitle>Projects</CVElementTitle>
         </CVElementTitleWrapper>
+        {/* Climbing Gear Graph */}
         <CVProjectContainer>
           <CVSubtitleWrapper>
             <CVProjectBreakPoint />
@@ -113,7 +119,7 @@ const CVContent = ({ langauge = 'english' }) => {
               safety gear - Nodejs, Express, D3, React
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
-          <CVProjectDescriptionWrapper>
+          {/* <CVProjectDescriptionWrapper>
             <CVProjectDescription>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               ultricies nunc id nulla commodo tempor. Sed cursus ex sit amet
@@ -122,12 +128,19 @@ const CVContent = ({ langauge = 'english' }) => {
               consectetur adipiscing elit. Praesent eleifend vitae sapien vel
               scelerisque.
             </CVProjectDescription>
-          </CVProjectDescriptionWrapper>
-          <CVGitLinkWrapper>
-            <CVGitLogo />
-            <CVGitLink>www.gitlink.com</CVGitLink>
-          </CVGitLinkWrapper>
+          </CVProjectDescriptionWrapper> */}
+          <CVProjectLinksContainer>
+            <CVGitLinkWrapper href='https://www.youtube.com' target='_blank'>
+              <CVGitLogo />
+              <CVGitLink>Source</CVGitLink>
+            </CVGitLinkWrapper>
+            <CVDemoLinkWrapper href='https://www.youtube.com' target='_blank'>
+              <CVDemoLogo />
+              <CVDemoLink>Live Demo</CVDemoLink>
+            </CVDemoLinkWrapper>
+          </CVProjectLinksContainer>
         </CVProjectContainer>
+        {/* Jake-reddy.com */}
         <CVProjectContainer>
           <CVSubtitleWrapper>
             <CVProjectBreakPoint />
@@ -139,7 +152,7 @@ const CVContent = ({ langauge = 'english' }) => {
               reCaptcha
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
-          <CVProjectDescriptionWrapper>
+          {/* <CVProjectDescriptionWrapper>
             <CVProjectDescription>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               ultricies nunc id nulla commodo tempor. Sed cursus ex sit amet
@@ -148,12 +161,21 @@ const CVContent = ({ langauge = 'english' }) => {
               consectetur adipiscing elit. Praesent eleifend vitae sapien vel
               scelerisque.
             </CVProjectDescription>
-          </CVProjectDescriptionWrapper>
-          <CVGitLinkWrapper>
-            <CVGitLogo />
-            <CVGitLink>www.gitlink.com</CVGitLink>
-          </CVGitLinkWrapper>
+          </CVProjectDescriptionWrapper> */}
+          <CVProjectLinksContainer
+            href='https://www.youtube.com'
+            target='_blank'>
+            <CVGitLinkWrapper>
+              <CVGitLogo />
+              <CVGitLink>Source</CVGitLink>
+            </CVGitLinkWrapper>
+            <CVDemoLinkWrapper href='https://www.youtube.com' target='_blank'>
+              <CVDemoLogo />
+              <CVDemoLink>Live Demo</CVDemoLink>
+            </CVDemoLinkWrapper>
+          </CVProjectLinksContainer>
         </CVProjectContainer>
+        {/* Blog App */}
         <CVProjectContainer>
           <CVSubtitleWrapper>
             <CVProjectBreakPoint />
@@ -164,7 +186,7 @@ const CVContent = ({ langauge = 'english' }) => {
               Highway 2 code - blog listing app - Nodejs, Express, React, Redux
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
-          <CVProjectDescriptionWrapper>
+          {/* <CVProjectDescriptionWrapper>
             <CVProjectDescription>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               ultricies nunc id nulla commodo tempor. Sed cursus ex sit amet
@@ -173,12 +195,19 @@ const CVContent = ({ langauge = 'english' }) => {
               consectetur adipiscing elit. Praesent eleifend vitae sapien vel
               scelerisque.
             </CVProjectDescription>
-          </CVProjectDescriptionWrapper>
-          <CVGitLinkWrapper>
-            <CVGitLogo />
-            <CVGitLink>www.gitlink.com</CVGitLink>
-          </CVGitLinkWrapper>
+          </CVProjectDescriptionWrapper> */}
+          <CVProjectLinksContainer>
+            <CVGitLinkWrapper href='https://www.youtube.com' target='_blank'>
+              <CVGitLogo />
+              <CVGitLink>Source</CVGitLink>
+            </CVGitLinkWrapper>
+            <CVDemoLinkWrapper href='https://www.youtube.com' target='_blank'>
+              <CVDemoLogo />
+              <CVDemoLink>Live Demo</CVDemoLink>
+            </CVDemoLinkWrapper>
+          </CVProjectLinksContainer>
         </CVProjectContainer>
+        {/* Library database */}
         <CVProjectContainer>
           <CVSubtitleWrapper>
             <CVProjectBreakPoint />
@@ -189,7 +218,7 @@ const CVContent = ({ langauge = 'english' }) => {
               Highway 2 code - library database - Nodejs, GraphQL, React, Redux
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
-          <CVProjectDescriptionWrapper>
+          {/* <CVProjectDescriptionWrapper>
             <CVProjectDescription>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               ultricies nunc id nulla commodo tempor. Sed cursus ex sit amet
@@ -198,11 +227,17 @@ const CVContent = ({ langauge = 'english' }) => {
               consectetur adipiscing elit. Praesent eleifend vitae sapien vel
               scelerisque.
             </CVProjectDescription>
-          </CVProjectDescriptionWrapper>
-          <CVGitLinkWrapper>
-            <CVGitLogo />
-            <CVGitLink>www.gitlink.com</CVGitLink>
-          </CVGitLinkWrapper>
+          </CVProjectDescriptionWrapper> */}
+          <CVProjectLinksContainer>
+            <CVGitLinkWrapper href='https://www.youtube.com' target='_blank'>
+              <CVGitLogo />
+              <CVGitLink>Source</CVGitLink>
+            </CVGitLinkWrapper>
+            <CVDemoLinkWrapper href='https://www.youtube.com' target='_blank'>
+              <CVDemoLogo />
+              <CVDemoLink>Live Demo</CVDemoLink>
+            </CVDemoLinkWrapper>
+          </CVProjectLinksContainer>
         </CVProjectContainer>
       </CVElementContainer>
       {/*   Education   */}
@@ -210,7 +245,7 @@ const CVContent = ({ langauge = 'english' }) => {
         <CVElementTitleWrapper>
           <CVSchoolLogo />
           <CVElementTitle>
-            {cvContentText[langauge].education.title}
+            {cvContentText[language].education.title}
           </CVElementTitle>
         </CVElementTitleWrapper>
         {/*   Hotel, restaurant and catering   */}
@@ -218,12 +253,59 @@ const CVContent = ({ langauge = 'english' }) => {
           <CVSubtitleWrapper>
             <CVProjectBreakPoint />
             <CVSubtitle>
-              {cvContentText[langauge].education.horeca.title}
+              {cvContentText[language].education.horeca.title}
             </CVSubtitle>
           </CVSubtitleWrapper>
           <CVProjectSubtitleWrapper>
             <CVProjectSubtitle>
-              {cvContentText[langauge].education.horeca.subtitle}
+              {cvContentText[language].education.horeca.subtitle}
+            </CVProjectSubtitle>
+          </CVProjectSubtitleWrapper>
+          {/* <CVProjectDescriptionWrapper>
+            <CVProjectDescription>
+              {cvContentText[language].education.horeca.description}
+            </CVProjectDescription>
+          </CVProjectDescriptionWrapper> */}
+        </CVProjectContainer>
+        {/*   Full-stack  */}
+        <CVProjectContainer>
+          <CVSubtitleWrapper>
+            <CVProjectBreakPoint />
+            <CVSubtitle>
+              {cvContentText[language].education.fullstack.title}
+            </CVSubtitle>
+          </CVSubtitleWrapper>
+          <CVProjectSubtitleWrapper>
+            <CVProjectSubtitle>
+              {cvContentText[language].education.fullstack.subtitle}
+            </CVProjectSubtitle>
+          </CVProjectSubtitleWrapper>
+          {/* <CVProjectDescriptionWrapper>
+            <CVProjectDescription>
+              {cvContentText[language].education.fullstack.description}
+            </CVProjectDescription>
+          </CVProjectDescriptionWrapper> */}
+        </CVProjectContainer>
+      </CVElementContainer>
+      {/*  Additional Studies   */}
+      <CVElementContainer>
+        <CVElementTitleWrapper>
+          <CVSchoolLogo />
+          <CVElementTitle>
+            {cvContentText[language].additionalstudies.title}
+          </CVElementTitle>
+        </CVElementTitleWrapper>
+        {/*   Responsive Web Development  */}
+        <CVProjectContainer>
+          <CVSubtitleWrapper>
+            <CVProjectBreakPoint />
+            <CVSubtitle>
+              {cvContentText[language].additionalstudies.reswebdev.title}
+            </CVSubtitle>
+          </CVSubtitleWrapper>
+          <CVProjectSubtitleWrapper>
+            <CVProjectSubtitle>
+              {cvContentText[language].additionalstudies.reswebdev.subtitle}
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
           {/* <CVProjectDescriptionWrapper>
@@ -232,78 +314,33 @@ const CVContent = ({ langauge = 'english' }) => {
             </CVProjectDescription>
           </CVProjectDescriptionWrapper> */}
         </CVProjectContainer>
-        {/*  Android Dev   */}
+      </CVElementContainer>
+      {/*  Achivements  */}
+      <CVElementContainer>
+        <CVElementTitleWrapper>
+          <CVSchoolLogo />
+          <CVElementTitle>
+            {cvContentText[language].achivements.title}
+          </CVElementTitle>
+        </CVElementTitleWrapper>
+        {/*  GGULIVRR  */}
         <CVProjectContainer>
           <CVSubtitleWrapper>
             <CVProjectBreakPoint />
             <CVSubtitle>
-              {cvContentText[langauge].education.android.title}
+              {cvContentText[language].achivements.ggulivrr.title}
             </CVSubtitle>
           </CVSubtitleWrapper>
           <CVProjectSubtitleWrapper>
             <CVProjectSubtitle>
-              {cvContentText[langauge].education.android.subtitle}
+              {cvContentText[language].achivements.ggulivrr.subtitle}
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
           {/* <CVProjectDescriptionWrapper>
             <CVProjectDescription>
-              {cvContentText[langauge].education.android.description}
+              {cvContentText[langauge].education.horeca.description}
             </CVProjectDescription>
           </CVProjectDescriptionWrapper> */}
-          <CVGitLinkWrapper>
-            <CVGitLink>
-              {cvContentText[langauge].education.android.link}
-            </CVGitLink>
-          </CVGitLinkWrapper>
-        </CVProjectContainer>
-        {/*   Full-stack  */}
-        <CVProjectContainer>
-          <CVSubtitleWrapper>
-            <CVProjectBreakPoint />
-            <CVSubtitle>
-              {cvContentText[langauge].education.fullstack.title}
-            </CVSubtitle>
-          </CVSubtitleWrapper>
-          <CVProjectSubtitleWrapper>
-            <CVProjectSubtitle>
-              {cvContentText[langauge].education.fullstack.subtitle}
-            </CVProjectSubtitle>
-          </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              {cvContentText[langauge].education.fullstack.description}
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
-          <CVGitLinkWrapper>
-            <CVGitLink>
-              {cvContentText[langauge].education.fullstack.link}
-            </CVGitLink>
-          </CVGitLinkWrapper>
-        </CVProjectContainer>
-        {/*   Responsive web dev   */}
-        <CVProjectContainer>
-          <CVSubtitleWrapper>
-            <CVProjectBreakPoint />
-            <CVSubtitle>
-              {cvContentText[langauge].education.reswebdev.title}
-            </CVSubtitle>
-          </CVSubtitleWrapper>
-          <CVProjectSubtitleWrapper>
-            <CVProjectSubtitle>
-              {cvContentText[langauge].education.reswebdev.subtitle}
-            </CVProjectSubtitle>
-          </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              {cvContentText[langauge].education.reswebdev.description}
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
-          <CVGitLinkWrapper>
-            <CVGitLogo />
-            <CVGitLink>
-              {cvContentText[langauge].education.reswebdev.link}
-            </CVGitLink>
-          </CVGitLinkWrapper>
         </CVProjectContainer>
       </CVElementContainer>
     </CVContentContainer>

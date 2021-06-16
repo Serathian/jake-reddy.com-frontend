@@ -6,8 +6,11 @@ import { IoMdSchool } from 'react-icons/io'
 import { FiServer } from 'react-icons/fi'
 import { RiComputerLine } from 'react-icons/ri'
 import { GrTechnology } from 'react-icons/gr'
+import { AiFillEye } from 'react-icons/ai'
 
-export const CVContentContainer = styled.div``
+export const CVContentContainer = styled.div`
+  margin-bottom: 10vh;
+`
 export const CVElementContainer = styled.div``
 export const CVElementTitleWrapper = styled.div`
   display: flex;
@@ -67,6 +70,7 @@ export const CVSubtitle = styled.h3`
 export const CVProjectSubtitleWrapper = styled.div``
 export const CVProjectSubtitle = styled.h4`
   padding-left: 23px;
+  margin: unset;
   margin-top: 7px;
   font-size: 0.95em;
   font-weight: 400;
@@ -77,16 +81,36 @@ export const CVProjectDescription = styled.p`
   padding-left: 15px;
   font-size: 0.8em;
 `
-export const CVGitLinkWrapper = styled.div`
-  padding-left: 15px;
+export const CVProjectLinksContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+export const CVGitLinkWrapper = styled.a`
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 `
 export const CVGitLink = styled.a`
   padding: 7px;
 `
+export const CVDemoLinkWrapper = styled.a`
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+`
+export const CVDemoLink = styled.a`
+  padding: 7px;
+`
 export const CVGitLogo = styled(VscGithub)``
+export const CVDemoLogo = styled(AiFillEye)``
 export const CVProfileLogo = styled(CgProfile)`
   font-size: 3em;
 `
