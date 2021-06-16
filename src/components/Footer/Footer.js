@@ -24,9 +24,9 @@ const Footer = () => {
           <FooterLinksContainer>
             <FooterLinksColumn>
               <FooterLinksBlock>
-                <FooterLink to='/blog'>My Blog</FooterLink>
+                {/* <FooterLink to='/blog'>My Blog</FooterLink>
                 <FooterLink to='/projects'>Projects</FooterLink>
-                <FooterLink to='/more-about-me'>More About Me</FooterLink>
+                <FooterLink to='/more-about-me'>More About Me</FooterLink> */}
                 <FooterLink to='/terms'>Terms and Conditions</FooterLink>
               </FooterLinksBlock>
             </FooterLinksColumn>
