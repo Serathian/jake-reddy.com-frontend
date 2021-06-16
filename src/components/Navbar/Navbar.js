@@ -79,19 +79,16 @@ const Navbar = ({ toggleContactPopup, toggleSidebar }) => {
                       Portfolio
                     </NavScrollLinks>
                   </NavItem>
+                  <NavItem>
+                    <NavLinks to='/resume' target='_blank'>
+                      Resume
+                    </NavLinks>
+                  </NavItem>
                 </>
               ) : (
                 <>
                   <NavItem>
-                    <NavLinks
-                      to='/'
-                      smooth='true'
-                      duration={500}
-                      spy='true'
-                      exact='true'
-                      offset={-80}>
-                      Go Back
-                    </NavLinks>
+                    <NavLinks to='/'>Go Back</NavLinks>
                   </NavItem>
                 </>
               )}
