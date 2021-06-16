@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from 'react-router-dom'
 import Home from './pages/Home.js'
 import Navbar from './components/Navbar/Navbar'
 import { Sidebar } from './components/Sidebar/Sidebar'
@@ -74,7 +79,10 @@ function App() {
             </Route>
             <Route exact path='/tradrack' component={TradRackCalculator} />
             <Route exact path='/terms' component={TermsAndConditions} />
-            <Route exact path='/cv' component={CurriculumVitae} />
+            <Route exact path='/resume' component={CurriculumVitae} />
+            <Route path='/*'>
+              <Redirect to='/' />
+            </Route>
           </Switch>
           <Footer />
         </Router>

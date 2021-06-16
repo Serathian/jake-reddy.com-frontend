@@ -17,7 +17,6 @@ import {
   CVListTitle,
   CVListContainer,
   CVListItem,
-  CVAboutMeLogo,
   CVSkillsLogo,
   CVContactLogo,
 } from './CVSidebarElements'
