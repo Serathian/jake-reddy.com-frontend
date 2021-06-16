@@ -320,7 +320,7 @@ const CVContent = ({ language = 'english' }) => {
         <CVElementTitleWrapper>
           <CVSchoolLogo />
           <CVElementTitle>
-            {cvContentText[language].achivements.title}
+            {cvContentText[language].achievements.title}
           </CVElementTitle>
         </CVElementTitleWrapper>
         {/*  GGULIVRR  */}
@@ -328,12 +328,12 @@ const CVContent = ({ language = 'english' }) => {
           <CVSubtitleWrapper>
             <CVProjectBreakPoint />
             <CVSubtitle>
-              {cvContentText[language].achivements.ggulivrr.title}
+              {cvContentText[language].achievements.ggulivrr.title}
             </CVSubtitle>
           </CVSubtitleWrapper>
           <CVProjectSubtitleWrapper>
             <CVProjectSubtitle>
-              {cvContentText[language].achivements.ggulivrr.subtitle}
+              {cvContentText[language].achievements.ggulivrr.subtitle}
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
           {/* <CVProjectDescriptionWrapper>

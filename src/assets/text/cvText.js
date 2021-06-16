@@ -39,8 +39,8 @@ export const cvContentText = {
         href: '',
       },
     },
-    achivements: {
-      title: 'Achivements',
+    achievements: {
+      title: 'Achievements',
       ggulivrr: {
         title: 'GGULIVRR - Winning team',
         subtitle: `Team leader of 'ScanCycle' to 1st place prize in a 2 week international app prototyping competition.`,
