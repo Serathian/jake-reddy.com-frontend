@@ -111,16 +111,18 @@ export const CVSidebarElementsContainer = styled.div`
 export const CVSidebarElementContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   margin: 10px 30px 10px 30px;
 `
 export const CVSidebarTitleWrapper = styled.div`
   display: flex;
   flex-direction: row;
-`
-export const CVListTitle = styled.div`
+  align-items: center;
+  padding-bottom: 5px;
   border-bottom: 2px solid;
   border-color: ${colorPallet.content2};
+`
+export const CVListTitle = styled.div`
   margin-left: 7px;
 `
 export const CVListContainer = styled.ul`

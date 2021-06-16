@@ -2,10 +2,8 @@ export const cvContentText = {
   english: {
     profile: {
       title: 'Profile',
-      content: `Passionate self-taught Javascript developer with experience in customer relations and management. 
-      What I lack in traditional 'qualifications' Is made up by my drive to succeed and ability to learn quickly, 
-      I opted for a study path that cut out the bloated and outdated schooling systems and focuses on what I enjoy.
-       This allowed me to focus on modern technologies and solutions.`,
+      content: `Former restaurant manager transistioning into full-stack web development. 
+      Self-taught and focusing on modern technologies and solutions, mainly MERN stack.`,
     },
     education: {
       title: 'Education',

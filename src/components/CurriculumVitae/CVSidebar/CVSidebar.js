@@ -26,24 +26,47 @@ const CVSideBar = () => {
   return (
     <CVSidebarContainer>
       <CVSidebarBG></CVSidebarBG>
-      {/* <CVSideBarSlider> */}
-      <CVDiagonalBox>
-        <CVPersonalInfoContainer>
-          <CVNameWrapper>
-            <CVName>Jake Reddy</CVName>
-          </CVNameWrapper>
-          <CVSidebarHeaderWrapper>
-            <CVSidebarHeader>Javascript Fullstack Developer</CVSidebarHeader>
-          </CVSidebarHeaderWrapper>
-          <CVSidebarSubtitleWrapper>
-            <CVSidebarSubtitle>
-              Motivated by the rewards of problem solving and aquiring knowledge
-            </CVSidebarSubtitle>
-          </CVSidebarSubtitleWrapper>
-        </CVPersonalInfoContainer>
-      </CVDiagonalBox>
-      <CVSidebarElementsContainer>
-        <CVSidebarElementContainer>
+      <CVSideBarSlider>
+        <CVDiagonalBox>
+          <CVPersonalInfoContainer>
+            <CVNameWrapper>
+              <CVName>Jake Reddy</CVName>
+            </CVNameWrapper>
+            <CVSidebarHeaderWrapper>
+              <CVSidebarHeader>Javascript Fullstack Developer</CVSidebarHeader>
+            </CVSidebarHeaderWrapper>
+            <CVSidebarSubtitleWrapper>
+              <CVSidebarSubtitle>
+                Motivated by the rewards of problem solving and aquiring
+                knowledge
+              </CVSidebarSubtitle>
+            </CVSidebarSubtitleWrapper>
+          </CVPersonalInfoContainer>
+        </CVDiagonalBox>
+        <CVSidebarElementsContainer>
+          <CVSidebarElementContainer>
+            <CVSidebarTitleWrapper>
+              <CVContactLogo />
+              <CVListTitle>Get In Touch</CVListTitle>
+            </CVSidebarTitleWrapper>
+            <CVListContainer>
+              <CVListItem>0440386700</CVListItem>
+              <CVListItem>info@jake-reddy.com</CVListItem>
+              <CVListItem>www.jake-reddy.com</CVListItem>
+            </CVListContainer>
+          </CVSidebarElementContainer>
+          <CVSidebarElementContainer>
+            <CVSidebarTitleWrapper>
+              <CVSkillsLogo />
+              <CVListTitle>Languages</CVListTitle>
+            </CVSidebarTitleWrapper>
+            <CVListContainer>
+              <CVListItem>English - Native</CVListItem>
+              <CVListItem>Finnish - Excellent</CVListItem>
+              <CVListItem>Spannish - Novice </CVListItem>
+            </CVListContainer>
+          </CVSidebarElementContainer>
+          {/* <CVSidebarElementContainer>
           <CVSidebarTitleWrapper>
             <CVAboutMeLogo />
             <CVListTitle>Why choose me?</CVListTitle>
@@ -54,8 +77,8 @@ const CVSideBar = () => {
             <CVListItem>Easy personality and work well in teams</CVListItem>
             <CVListItem>Asperation to success and grow</CVListItem>
           </CVListContainer>
-        </CVSidebarElementContainer>
-        <CVSidebarElementContainer>
+        </CVSidebarElementContainer> */}
+          {/* <CVSidebarElementContainer>
           <CVSidebarTitleWrapper>
             <CVSkillsLogo />
             <CVListTitle>Skills Toolbox</CVListTitle>
@@ -66,34 +89,9 @@ const CVSideBar = () => {
             <CVListItem>React, Redux</CVListItem>
             <CVListItem>MongoDB</CVListItem>
           </CVListContainer>
-        </CVSidebarElementContainer>
-        <CVSidebarElementContainer>
-          <CVSidebarTitleWrapper>
-            <CVSkillsLogo />
-            <CVListTitle>Languages</CVListTitle>
-          </CVSidebarTitleWrapper>
-          <CVListContainer>
-            <CVListItem>English - Native</CVListItem>
-            <CVListItem>Finnish - Excellent</CVListItem>
-            <CVListItem>Spannish - Novice </CVListItem>
-          </CVListContainer>
-        </CVSidebarElementContainer>
-        <CVSidebarElementContainer>
-          <CVSidebarTitleWrapper>
-            <CVContactLogo />
-            <CVListTitle>Get In Touch</CVListTitle>
-          </CVSidebarTitleWrapper>
-          <CVListContainer>
-            <CVListItem>0440386700</CVListItem>
-            <CVListItem>info@jake-reddy.com</CVListItem>
-            <CVListItem>
-              Lepokivenkuja 1<br></br>70910, Vuorela
-            </CVListItem>
-            <CVListItem>www.jake-reddy.com</CVListItem>
-          </CVListContainer>
-        </CVSidebarElementContainer>
-      </CVSidebarElementsContainer>
-      {/* </CVSideBarSlider> */}
+        </CVSidebarElementContainer> */}
+        </CVSidebarElementsContainer>
+      </CVSideBarSlider>
     </CVSidebarContainer>
   )
 }

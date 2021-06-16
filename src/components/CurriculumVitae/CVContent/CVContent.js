@@ -5,6 +5,12 @@ import {
   CVElementTitleWrapper,
   CVElementTitle,
   CVElementContent,
+  CVCardsContainer,
+  CVCard,
+  CVCardTitleWrapper,
+  CVCardTitle,
+  CVCardListContainer,
+  CVCardListItem,
   CVProjectContainer,
   CVSubtitleWrapper,
   CVSubtitle,
@@ -19,6 +25,10 @@ import {
   CVGitLogo,
   CVProjectBreakPoint,
   CVSchoolLogo,
+  CVServerLogo,
+  CVScreenLogo,
+  CVTechLogo,
+  CVToolBox,
 } from './CVContentElements'
 import { cvContentText } from '../../../assets/text/cvText'
 
@@ -37,106 +47,54 @@ const CVContent = ({ langauge = 'english' }) => {
           {cvContentText[langauge].profile.content}
         </CVElementContent>
       </CVElementContainer>
-      {/*   Education   */}
       <CVElementContainer>
         <CVElementTitleWrapper>
-          <CVSchoolLogo />
-          <CVElementTitle>
-            {cvContentText[langauge].education.title}
-          </CVElementTitle>
+          <CVToolBox />
+          <CVElementTitle>Skills</CVElementTitle>
         </CVElementTitleWrapper>
-        {/*   Hotel, restaurant and catering   */}
-        <CVProjectContainer>
-          <CVSubtitleWrapper>
-            <CVProjectBreakPoint />
-            <CVSubtitle>
-              {cvContentText[langauge].education.horeca.title}
-            </CVSubtitle>
-          </CVSubtitleWrapper>
-          <CVProjectSubtitleWrapper>
-            <CVProjectSubtitle>
-              {cvContentText[langauge].education.horeca.subtitle}
-            </CVProjectSubtitle>
-          </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              {cvContentText[langauge].education.horeca.description}
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
-        </CVProjectContainer>
-        {/*  Android Dev   */}
-        <CVProjectContainer>
-          <CVSubtitleWrapper>
-            <CVProjectBreakPoint />
-            <CVSubtitle>
-              {cvContentText[langauge].education.android.title}
-            </CVSubtitle>
-          </CVSubtitleWrapper>
-          <CVProjectSubtitleWrapper>
-            <CVProjectSubtitle>
-              {cvContentText[langauge].education.android.subtitle}
-            </CVProjectSubtitle>
-          </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              {cvContentText[langauge].education.android.description}
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
-          <CVGitLinkWrapper>
-            <CVGitLink>
-              {cvContentText[langauge].education.android.link}
-            </CVGitLink>
-          </CVGitLinkWrapper>
-        </CVProjectContainer>
-        {/*   Full-stack  */}
-        <CVProjectContainer>
-          <CVSubtitleWrapper>
-            <CVProjectBreakPoint />
-            <CVSubtitle>
-              {cvContentText[langauge].education.fullstack.title}
-            </CVSubtitle>
-          </CVSubtitleWrapper>
-          <CVProjectSubtitleWrapper>
-            <CVProjectSubtitle>
-              {cvContentText[langauge].education.fullstack.subtitle}
-            </CVProjectSubtitle>
-          </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              {cvContentText[langauge].education.fullstack.description}
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
-          <CVGitLinkWrapper>
-            <CVGitLink>
-              {cvContentText[langauge].education.fullstack.link}
-            </CVGitLink>
-          </CVGitLinkWrapper>
-        </CVProjectContainer>
-        {/*   Responsive web dev   */}
-        <CVProjectContainer>
-          <CVSubtitleWrapper>
-            <CVProjectBreakPoint />
-            <CVSubtitle>
-              {cvContentText[langauge].education.reswebdev.title}
-            </CVSubtitle>
-          </CVSubtitleWrapper>
-          <CVProjectSubtitleWrapper>
-            <CVProjectSubtitle>
-              {cvContentText[langauge].education.reswebdev.subtitle}
-            </CVProjectSubtitle>
-          </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              {cvContentText[langauge].education.reswebdev.description}
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
-          <CVGitLinkWrapper>
-            <CVGitLogo />
-            <CVGitLink>
-              {cvContentText[langauge].education.reswebdev.link}
-            </CVGitLink>
-          </CVGitLinkWrapper>
-        </CVProjectContainer>
+        <CVCardsContainer>
+          <CVCard>
+            <CVCardTitleWrapper>
+              <CVServerLogo />
+              <CVCardTitle>Backend</CVCardTitle>
+            </CVCardTitleWrapper>
+            <CVCardListContainer>
+              <CVCardListItem>Nodejs</CVCardListItem>
+              <CVCardListItem>Express</CVCardListItem>
+              <CVCardListItem>GraphQL, Apollo</CVCardListItem>
+              <CVCardListItem>MongoDB, Mongoose</CVCardListItem>
+              <CVCardListItem>Supertest</CVCardListItem>
+            </CVCardListContainer>
+          </CVCard>
+
+          <CVCard>
+            <CVCardTitleWrapper>
+              <CVScreenLogo />
+              <CVCardTitle>Frontend</CVCardTitle>
+            </CVCardTitleWrapper>
+            <CVCardListContainer>
+              <CVCardListItem>React</CVCardListItem>
+              <CVCardListItem>Redux</CVCardListItem>
+              <CVCardListItem>D3</CVCardListItem>
+              <CVCardListItem>Styled-Components</CVCardListItem>
+              <CVCardListItem>Jest and Cypress</CVCardListItem>
+            </CVCardListContainer>
+          </CVCard>
+
+          <CVCard>
+            <CVCardTitleWrapper>
+              <CVTechLogo />
+              <CVCardTitle>Languages</CVCardTitle>
+            </CVCardTitleWrapper>
+            <CVCardListContainer>
+              <CVCardListItem>Javascript</CVCardListItem>
+              <CVCardListItem>HTML/JSX</CVCardListItem>
+              <CVCardListItem>CSS</CVCardListItem>
+              <CVCardListItem>C#</CVCardListItem>
+              <CVCardListItem>Java</CVCardListItem>
+            </CVCardListContainer>
+          </CVCard>
+        </CVCardsContainer>
       </CVElementContainer>
       {/*   Projects   */}
       <CVElementContainer>
@@ -244,6 +202,107 @@ const CVContent = ({ langauge = 'english' }) => {
           <CVGitLinkWrapper>
             <CVGitLogo />
             <CVGitLink>www.gitlink.com</CVGitLink>
+          </CVGitLinkWrapper>
+        </CVProjectContainer>
+      </CVElementContainer>
+      {/*   Education   */}
+      <CVElementContainer>
+        <CVElementTitleWrapper>
+          <CVSchoolLogo />
+          <CVElementTitle>
+            {cvContentText[langauge].education.title}
+          </CVElementTitle>
+        </CVElementTitleWrapper>
+        {/*   Hotel, restaurant and catering   */}
+        <CVProjectContainer>
+          <CVSubtitleWrapper>
+            <CVProjectBreakPoint />
+            <CVSubtitle>
+              {cvContentText[langauge].education.horeca.title}
+            </CVSubtitle>
+          </CVSubtitleWrapper>
+          <CVProjectSubtitleWrapper>
+            <CVProjectSubtitle>
+              {cvContentText[langauge].education.horeca.subtitle}
+            </CVProjectSubtitle>
+          </CVProjectSubtitleWrapper>
+          {/* <CVProjectDescriptionWrapper>
+            <CVProjectDescription>
+              {cvContentText[langauge].education.horeca.description}
+            </CVProjectDescription>
+          </CVProjectDescriptionWrapper> */}
+        </CVProjectContainer>
+        {/*  Android Dev   */}
+        <CVProjectContainer>
+          <CVSubtitleWrapper>
+            <CVProjectBreakPoint />
+            <CVSubtitle>
+              {cvContentText[langauge].education.android.title}
+            </CVSubtitle>
+          </CVSubtitleWrapper>
+          <CVProjectSubtitleWrapper>
+            <CVProjectSubtitle>
+              {cvContentText[langauge].education.android.subtitle}
+            </CVProjectSubtitle>
+          </CVProjectSubtitleWrapper>
+          {/* <CVProjectDescriptionWrapper>
+            <CVProjectDescription>
+              {cvContentText[langauge].education.android.description}
+            </CVProjectDescription>
+          </CVProjectDescriptionWrapper> */}
+          <CVGitLinkWrapper>
+            <CVGitLink>
+              {cvContentText[langauge].education.android.link}
+            </CVGitLink>
+          </CVGitLinkWrapper>
+        </CVProjectContainer>
+        {/*   Full-stack  */}
+        <CVProjectContainer>
+          <CVSubtitleWrapper>
+            <CVProjectBreakPoint />
+            <CVSubtitle>
+              {cvContentText[langauge].education.fullstack.title}
+            </CVSubtitle>
+          </CVSubtitleWrapper>
+          <CVProjectSubtitleWrapper>
+            <CVProjectSubtitle>
+              {cvContentText[langauge].education.fullstack.subtitle}
+            </CVProjectSubtitle>
+          </CVProjectSubtitleWrapper>
+          {/* <CVProjectDescriptionWrapper>
+            <CVProjectDescription>
+              {cvContentText[langauge].education.fullstack.description}
+            </CVProjectDescription>
+          </CVProjectDescriptionWrapper> */}
+          <CVGitLinkWrapper>
+            <CVGitLink>
+              {cvContentText[langauge].education.fullstack.link}
+            </CVGitLink>
+          </CVGitLinkWrapper>
+        </CVProjectContainer>
+        {/*   Responsive web dev   */}
+        <CVProjectContainer>
+          <CVSubtitleWrapper>
+            <CVProjectBreakPoint />
+            <CVSubtitle>
+              {cvContentText[langauge].education.reswebdev.title}
+            </CVSubtitle>
+          </CVSubtitleWrapper>
+          <CVProjectSubtitleWrapper>
+            <CVProjectSubtitle>
+              {cvContentText[langauge].education.reswebdev.subtitle}
+            </CVProjectSubtitle>
+          </CVProjectSubtitleWrapper>
+          {/* <CVProjectDescriptionWrapper>
+            <CVProjectDescription>
+              {cvContentText[langauge].education.reswebdev.description}
+            </CVProjectDescription>
+          </CVProjectDescriptionWrapper> */}
+          <CVGitLinkWrapper>
+            <CVGitLogo />
+            <CVGitLink>
+              {cvContentText[langauge].education.reswebdev.link}
+            </CVGitLink>
           </CVGitLinkWrapper>
         </CVProjectContainer>
       </CVElementContainer>
