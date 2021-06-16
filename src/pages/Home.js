@@ -1,9 +1,9 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection/HeroSection'
-import { kksObject, moreObject } from '../components/BodySection/Data'
-import BodySection from '../components/BodySection/BodySection'
+import { moreObject } from '../components/Portfolio/Data'
+import BodySection from '../components/Portfolio/BodySection'
 
-import Cards from '../components/Cards/Cards'
+import Cards from '../components/Knowledge/Cards'
 import AboutMe from '../components/AboutMe/AboutMe'
 
 const Home = ({ toggleTimeline }) => {
@@ -13,7 +13,6 @@ const Home = ({ toggleTimeline }) => {
       <AboutMe toggleTimeline={toggleTimeline} />
       <Cards />
       <div id='portfolio'>
-        <BodySection {...kksObject} />
         <BodySection {...moreObject} />
       </div>
     </>
