@@ -3,10 +3,12 @@ import { colorPallet } from '../../../assets/ColorPallet'
 import { CgProfile, CgToolbox } from 'react-icons/cg'
 import { VscGithub, VscProject, VscDebugBreakpointLog } from 'react-icons/vsc'
 import { IoMdSchool } from 'react-icons/io'
+import { IoSchoolOutline } from 'react-icons/io5'
 import { FiServer } from 'react-icons/fi'
 import { RiComputerLine } from 'react-icons/ri'
 import { GrTechnology } from 'react-icons/gr'
 import { AiFillEye } from 'react-icons/ai'
+import { GiAchievement } from 'react-icons/gi'
 
 export const CVContentContainer = styled.div`
   margin-bottom: 10vh;
@@ -130,5 +132,11 @@ export const CVProjectsLogo = styled(VscProject)`
   font-size: 3em;
 `
 export const CVSchoolLogo = styled(IoMdSchool)`
+  font-size: 3em;
+`
+export const CVSchoolOutlineLogo = styled(IoSchoolOutline)`
+  font-size: 3em;
+`
+export const CVAchievementLogo = styled(GiAchievement)`
   font-size: 3em;
 `

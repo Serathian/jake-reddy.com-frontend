@@ -29,10 +29,12 @@ import {
   CVDemoLogo,
   CVProjectBreakPoint,
   CVSchoolLogo,
+  CVSchoolOutlineLogo,
   CVServerLogo,
   CVScreenLogo,
   CVTechLogo,
   CVToolBox,
+  CVAchievementLogo,
 } from './CVContentElements'
 import { cvContentText } from '../../../assets/text/cvText'
 
@@ -290,7 +292,7 @@ const CVContent = ({ language = 'english' }) => {
       {/*  Additional Studies   */}
       <CVElementContainer>
         <CVElementTitleWrapper>
-          <CVSchoolLogo />
+          <CVSchoolOutlineLogo />
           <CVElementTitle>
             {cvContentText[language].additionalstudies.title}
           </CVElementTitle>
@@ -318,7 +320,7 @@ const CVContent = ({ language = 'english' }) => {
       {/*  Achievements  */}
       <CVElementContainer>
         <CVElementTitleWrapper>
-          <CVSchoolLogo />
+          <CVAchievementLogo />
           <CVElementTitle>
             {cvContentText[language].achievements.title}
           </CVElementTitle>
