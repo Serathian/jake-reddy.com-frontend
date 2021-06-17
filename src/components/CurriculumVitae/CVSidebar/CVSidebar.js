@@ -49,7 +49,7 @@ const CVSideBar = () => {
               <CVListTitle>Get In Touch</CVListTitle>
             </CVSidebarTitleWrapper>
             <CVListContainer>
-              <CVListItem>0440386700</CVListItem>
+              <CVListItem>(+358)0440386700</CVListItem>
               <CVListItem>info@jake-reddy.com</CVListItem>
               <CVListItem>www.jake-reddy.com</CVListItem>
             </CVListContainer>
@@ -62,7 +62,7 @@ const CVSideBar = () => {
             <CVListContainer>
               <CVListItem>English - Native</CVListItem>
               <CVListItem>Finnish - Excellent</CVListItem>
-              <CVListItem>Spannish - Novice </CVListItem>
+              <CVListItem>Spanish - Novice </CVListItem>
             </CVListContainer>
           </CVSidebarElementContainer>
           {/* <CVSidebarElementContainer>
@@ -74,7 +74,7 @@ const CVSideBar = () => {
             <CVListItem>Self taught and highly motived</CVListItem>
             <CVListItem>Fast learner</CVListItem>
             <CVListItem>Easy personality and work well in teams</CVListItem>
-            <CVListItem>Asperation to success and grow</CVListItem>
+            <CVListItem>Aspiration to success and grow</CVListItem>
           </CVListContainer>
         </CVSidebarElementContainer> */}
           {/* <CVSidebarElementContainer>

@@ -22,7 +22,7 @@ const BodySection = ({
   lightText,
   headLine,
   lightTextDesc,
-  desciption,
+  description,
   buttonLabel,
   href,
   img,
@@ -40,7 +40,7 @@ const BodySection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
-                <Subtitle lightTextDesc={lightTextDesc}>{desciption}</Subtitle>
+                <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
                 <BtnWrap>
                   <HrefButton
                     href={href}

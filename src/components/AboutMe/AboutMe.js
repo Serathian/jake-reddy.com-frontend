@@ -73,9 +73,9 @@ const AboutMe = ({ toggleTimeline }) => {
               <ImageTopLine>
                 <AccentText style={{ letterSpacing: '5px' }}>Hey!</AccentText>
               </ImageTopLine>
-              <ImageTopLine>Let me intoduce myself</ImageTopLine>
+              <ImageTopLine>Let me introduce myself</ImageTopLine>
               <AboutMeP>
-                My names <AccentText>Jake Reddy</AccentText> and I'm a{' '}
+                My name's <AccentText>Jake Reddy</AccentText> and I'm a{' '}
                 <i>(mostly)</i> self taught programmer.
               </AboutMeP>
             </ImageTextWrapper>
@@ -83,14 +83,14 @@ const AboutMe = ({ toggleTimeline }) => {
           <TextColum>
             <AboutMeP>
               In April 2020 - COVID-19 left me redundant from my previous
-              employment as a Restruant manager.
+              employment as a Restaurant manager.
             </AboutMeP>
             <AboutMeP>
               When one door closes another opens, now with an abundant amount of
               free time the door is open for me to pursue a career in code.
             </AboutMeP>
             <AboutMeP style={{ textAlign: 'center' }}>
-              I haven't been sitting idlely for <br></br>
+              I haven't been sitting idly for <br></br>
               <AccentText
                 onClick={cycleTimeFormat}
                 style={{ cursor: 'pointer', margin: '40px' }}>

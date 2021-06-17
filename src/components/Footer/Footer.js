@@ -9,7 +9,7 @@ import {
   FooterLinksBlock,
   FooterLink,
   SocialMedia,
-  SocialMediawrapper,
+  SocialMediaWrapper,
   SocialLogo,
   WebsiteRights,
   SocialIcons,
@@ -32,7 +32,7 @@ const Footer = () => {
             </FooterLinksColumn>
           </FooterLinksContainer>
           <SocialMedia>
-            <SocialMediawrapper>
+            <SocialMediaWrapper>
               <SocialLogo to='/'>{'< J R >'}</SocialLogo>
               <WebsiteRights>
                 {'< J R > ' + new Date().getFullYear() + ' All rights reserved'}
@@ -57,7 +57,7 @@ const Footer = () => {
                   <FaLinkedin />
                 </SocialIconLink>
               </SocialIcons>
-            </SocialMediawrapper>
+            </SocialMediaWrapper>
           </SocialMedia>
         </FooterWrapper>
       </FooterContainer>

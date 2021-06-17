@@ -85,7 +85,7 @@ const VerticalTimelineComponent = () => {
         </StyledP>
       </StyledVerticalTimelineElement>
 
-      {/* Youtube course - Android Developement */}
+      {/* Youtube course - Android Development */}
       <StyledVerticalTimelineElement
         className='vertical-timeline-element--self-study'
         date='June 2020'
@@ -104,7 +104,7 @@ const VerticalTimelineComponent = () => {
           </StyledLink>
         </h3>
         <StyledP>
-          I wanted to code something more tangeble than c# console apps, so I
+          I wanted to code something more tangible than c# console apps, so I
           tried my hand at android development.
         </StyledP>
       </StyledVerticalTimelineElement>
@@ -124,7 +124,7 @@ const VerticalTimelineComponent = () => {
             href='https://courses.meicode.org/courses/android2020'
             target='_blank'
             aria-label='Meicode'>
-            Android Developement Masterclass
+            Android Development Masterclass
           </StyledLink>
         </h3>
         <StyledP>
@@ -153,7 +153,7 @@ const VerticalTimelineComponent = () => {
         </h3>
 
         <StyledP>
-          6 month bootcamp run by centria university with the focus of training
+          6 month boot-camp run by Centria university with the focus of training
           fullstack web developers.
         </StyledP>
       </StyledVerticalTimelineElement>
@@ -230,8 +230,7 @@ const VerticalTimelineComponent = () => {
         <h3 className='vertical-timeline-element-title'>UX/UI</h3>
 
         <StyledP>
-          6 month bootcamp run by centria university with the focus of training
-          fullstack web developers.
+          Accessability, Sitemaps and wireframes using Adobe xD and Figma.
         </StyledP>
       </StyledSubVerticalTimelineElement>
 
@@ -349,7 +348,7 @@ const VerticalTimelineComponent = () => {
         </StyledP>
       </StyledVerticalTimelineElement>
 
-      {/* Jakereddy.com*/}
+      {/* Jake-reddy.com*/}
       <StyledVerticalTimelineElement
         className='vertical-timeline-element--h2c-fullstack-starts'
         date='May 2021'

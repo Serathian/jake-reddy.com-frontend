@@ -248,25 +248,6 @@ const CVContent = ({ language = 'english' }) => {
             {cvContentText[language].education.title}
           </CVElementTitle>
         </CVElementTitleWrapper>
-        {/*   Hotel, restaurant and catering   */}
-        <CVProjectContainer>
-          <CVSubtitleWrapper>
-            <CVProjectBreakPoint />
-            <CVSubtitle>
-              {cvContentText[language].education.horeca.title}
-            </CVSubtitle>
-          </CVSubtitleWrapper>
-          <CVProjectSubtitleWrapper>
-            <CVProjectSubtitle>
-              {cvContentText[language].education.horeca.subtitle}
-            </CVProjectSubtitle>
-          </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              {cvContentText[language].education.horeca.description}
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
-        </CVProjectContainer>
         {/*   Full-stack  */}
         <CVProjectContainer>
           <CVSubtitleWrapper>
@@ -283,6 +264,25 @@ const CVContent = ({ language = 'english' }) => {
           {/* <CVProjectDescriptionWrapper>
             <CVProjectDescription>
               {cvContentText[language].education.fullstack.description}
+            </CVProjectDescription>
+          </CVProjectDescriptionWrapper> */}
+        </CVProjectContainer>
+        {/*   Hotel, restaurant and catering   */}
+        <CVProjectContainer>
+          <CVSubtitleWrapper>
+            <CVProjectBreakPoint />
+            <CVSubtitle>
+              {cvContentText[language].education.horeca.title}
+            </CVSubtitle>
+          </CVSubtitleWrapper>
+          <CVProjectSubtitleWrapper>
+            <CVProjectSubtitle>
+              {cvContentText[language].education.horeca.subtitle}
+            </CVProjectSubtitle>
+          </CVProjectSubtitleWrapper>
+          {/* <CVProjectDescriptionWrapper>
+            <CVProjectDescription>
+              {cvContentText[language].education.horeca.description}
             </CVProjectDescription>
           </CVProjectDescriptionWrapper> */}
         </CVProjectContainer>
@@ -310,12 +310,12 @@ const CVContent = ({ language = 'english' }) => {
           </CVProjectSubtitleWrapper>
           {/* <CVProjectDescriptionWrapper>
             <CVProjectDescription>
-              {cvContentText[langauge].education.horeca.description}
+              {cvContentText[language].education.horeca.description}
             </CVProjectDescription>
           </CVProjectDescriptionWrapper> */}
         </CVProjectContainer>
       </CVElementContainer>
-      {/*  Achivements  */}
+      {/*  Achievements  */}
       <CVElementContainer>
         <CVElementTitleWrapper>
           <CVSchoolLogo />

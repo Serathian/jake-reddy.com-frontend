@@ -72,7 +72,7 @@ export const SocialMedia = styled.section`
   width: 100%;
 `
 
-export const SocialMediawrapper = styled.div`
+export const SocialMediaWrapper = styled.div`
   display: flex;
   justify-content: stretch;
   align-items: center;
