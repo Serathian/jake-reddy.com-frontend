@@ -109,6 +109,43 @@ const CVContent = ({ language = 'english' }) => {
           <CVProjectsLogo />
           <CVElementTitle>Projects</CVElementTitle>
         </CVElementTitleWrapper>
+        {/* Jake-reddy.com */}
+        <CVProjectContainer>
+          <CVSubtitleWrapper>
+            <CVProjectBreakPoint />
+            <CVSubtitle>www.jake-reddy.com</CVSubtitle>
+          </CVSubtitleWrapper>
+          <CVProjectSubtitleWrapper>
+            <CVProjectSubtitle>
+              Personal project - Full-stack Webapp - Nodejs, React, Formik,
+              reCaptcha
+            </CVProjectSubtitle>
+          </CVProjectSubtitleWrapper>
+          {/* <CVProjectDescriptionWrapper>
+            <CVProjectDescription>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              ultricies nunc id nulla commodo tempor. Sed cursus ex sit amet
+              lacus tempus, ut molestie nulla placerat. Donec eu justo pharetra,
+              interdum arcu vitae, semper elit. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Praesent eleifend vitae sapien vel
+              scelerisque.
+            </CVProjectDescription>
+          </CVProjectDescriptionWrapper> */}
+          <CVProjectLinksContainer>
+            <CVGitLinkWrapper
+              href='https://github.com/Serathian/jake-reddy.com-frontend'
+              target='_blank'>
+              <CVGitLogo />
+              <CVGitLink>Source</CVGitLink>
+            </CVGitLinkWrapper>
+            <CVDemoLinkWrapper
+              href='https://www.jake-reddy.com'
+              target='_blank'>
+              <CVDemoLogo />
+              <CVDemoLink>Live Demo</CVDemoLink>
+            </CVDemoLinkWrapper>
+          </CVProjectLinksContainer>
+        </CVProjectContainer>
         {/* Climbing Gear Graph */}
         <CVProjectContainer>
           <CVSubtitleWrapper>
@@ -132,26 +169,28 @@ const CVContent = ({ language = 'english' }) => {
             </CVProjectDescription>
           </CVProjectDescriptionWrapper> */}
           <CVProjectLinksContainer>
-            <CVGitLinkWrapper href='https://www.youtube.com' target='_blank'>
+            <CVGitLinkWrapper
+              href='https://github.com/Serathian/trad-rack-calculator-frontend'
+              target='_blank'>
               <CVGitLogo />
               <CVGitLink>Source</CVGitLink>
             </CVGitLinkWrapper>
-            <CVDemoLinkWrapper href='https://www.youtube.com' target='_blank'>
+            <CVDemoLinkWrapper style={{ textDecoration: 'line-through' }}>
               <CVDemoLogo />
               <CVDemoLink>Live Demo</CVDemoLink>
             </CVDemoLinkWrapper>
           </CVProjectLinksContainer>
         </CVProjectContainer>
-        {/* Jake-reddy.com */}
+
+        {/* Library database */}
         <CVProjectContainer>
           <CVSubtitleWrapper>
             <CVProjectBreakPoint />
-            <CVSubtitle>www.jake-reddy.com</CVSubtitle>
+            <CVSubtitle>Library Database</CVSubtitle>
           </CVSubtitleWrapper>
           <CVProjectSubtitleWrapper>
             <CVProjectSubtitle>
-              Personal project - Full-stack Webapp - Nodejs, React, Formik,
-              reCaptcha
+              Highway 2 code - library database - Nodejs, GraphQL, React, Redux
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
           {/* <CVProjectDescriptionWrapper>
@@ -164,14 +203,14 @@ const CVContent = ({ language = 'english' }) => {
               scelerisque.
             </CVProjectDescription>
           </CVProjectDescriptionWrapper> */}
-          <CVProjectLinksContainer
-            href='https://www.youtube.com'
-            target='_blank'>
-            <CVGitLinkWrapper>
+          <CVProjectLinksContainer>
+            <CVGitLinkWrapper
+              href='https://github.com/Serathian/library-app-frontend'
+              target='_blank'>
               <CVGitLogo />
               <CVGitLink>Source</CVGitLink>
             </CVGitLinkWrapper>
-            <CVDemoLinkWrapper href='https://www.youtube.com' target='_blank'>
+            <CVDemoLinkWrapper style={{ textDecoration: 'line-through' }}>
               <CVDemoLogo />
               <CVDemoLink>Live Demo</CVDemoLink>
             </CVDemoLinkWrapper>
@@ -199,43 +238,15 @@ const CVContent = ({ language = 'english' }) => {
             </CVProjectDescription>
           </CVProjectDescriptionWrapper> */}
           <CVProjectLinksContainer>
-            <CVGitLinkWrapper href='https://www.youtube.com' target='_blank'>
+            <CVGitLinkWrapper
+              href='https://github.com/Serathian/blog-app-frontend'
+              target='_blank'>
               <CVGitLogo />
               <CVGitLink>Source</CVGitLink>
             </CVGitLinkWrapper>
-            <CVDemoLinkWrapper href='https://www.youtube.com' target='_blank'>
-              <CVDemoLogo />
-              <CVDemoLink>Live Demo</CVDemoLink>
-            </CVDemoLinkWrapper>
-          </CVProjectLinksContainer>
-        </CVProjectContainer>
-        {/* Library database */}
-        <CVProjectContainer>
-          <CVSubtitleWrapper>
-            <CVProjectBreakPoint />
-            <CVSubtitle>Library Database</CVSubtitle>
-          </CVSubtitleWrapper>
-          <CVProjectSubtitleWrapper>
-            <CVProjectSubtitle>
-              Highway 2 code - library database - Nodejs, GraphQL, React, Redux
-            </CVProjectSubtitle>
-          </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              ultricies nunc id nulla commodo tempor. Sed cursus ex sit amet
-              lacus tempus, ut molestie nulla placerat. Donec eu justo pharetra,
-              interdum arcu vitae, semper elit. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Praesent eleifend vitae sapien vel
-              scelerisque.
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
-          <CVProjectLinksContainer>
-            <CVGitLinkWrapper href='https://www.youtube.com' target='_blank'>
-              <CVGitLogo />
-              <CVGitLink>Source</CVGitLink>
-            </CVGitLinkWrapper>
-            <CVDemoLinkWrapper href='https://www.youtube.com' target='_blank'>
+            <CVDemoLinkWrapper
+              href='https://mysterious-harbor-18532.herokuapp.com/'
+              target='_blank'>
               <CVDemoLogo />
               <CVDemoLink>Live Demo</CVDemoLink>
             </CVDemoLinkWrapper>
