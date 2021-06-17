@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 //import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
+import { Link as LinkRouter } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
 import { colorPallet } from '../../assets/ColorPallet'
 
@@ -52,7 +53,24 @@ export const SidebarMenu = styled.ul`
   }
 `
 
-export const SidebarLink = styled(LinkScroll)`
+export const SidebarScrollLink = styled(LinkScroll)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    color: ${colorPallet.accent};
+    transition: 0.2s ease-in-out;
+  }
+`
+export const SidebarRouterLink = styled(LinkRouter)`
   display: flex;
   align-items: center;
   justify-content: center;
