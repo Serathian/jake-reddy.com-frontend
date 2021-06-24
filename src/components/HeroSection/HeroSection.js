@@ -28,7 +28,7 @@ const HeroSection = () => {
           <HeroName>Jake Reddy</HeroName>
         </HeroH1>
         <HeroH1>
-          and i'm an aspiring <br></br>
+          and i'm an<br></br>
           <HeroJob>{'< fullstack developer >'}</HeroJob>
         </HeroH1>
       </HeroContent>

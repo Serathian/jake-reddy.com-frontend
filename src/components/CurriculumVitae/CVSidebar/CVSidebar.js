@@ -36,7 +36,7 @@ const CVSideBar = () => {
             </CVSidebarHeaderWrapper>
             <CVSidebarSubtitleWrapper>
               <CVSidebarSubtitle>
-                Motivated by the rewards of problem solving and aquiring
+                Motivated by the rewards of problem-solving and acquiring
                 knowledge
               </CVSidebarSubtitle>
             </CVSidebarSubtitleWrapper>

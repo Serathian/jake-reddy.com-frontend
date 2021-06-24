@@ -75,19 +75,19 @@ const AboutMe = ({ toggleTimeline }) => {
               </ImageTopLine>
               <ImageTopLine>Let me introduce myself</ImageTopLine>
               <AboutMeP>
-                My name's <AccentText>Jake Reddy</AccentText> and I'm a{' '}
-                <i>(mostly)</i> self taught programmer.
+                My name's <AccentText>Jake Reddy,</AccentText> and I'm a{' '}
+                <i>(mostly)</i> self-taught programmer.
               </AboutMeP>
             </ImageTextWrapper>
           </ImageColumn>
           <TextColum>
             <AboutMeP>
               In April 2020 - COVID-19 left me redundant from my previous
-              employment as a Restaurant manager.
+              employment as a Restaurant Manager.
             </AboutMeP>
             <AboutMeP>
-              When one door closes another opens, now with an abundant amount of
-              free time the door is open for me to pursue a career in code.
+              When one door closes, another opens; now, with an abundant amount
+              of free time, the door is open for me to pursue a career in code.
             </AboutMeP>
             <AboutMeP style={{ textAlign: 'center' }}>
               I haven't been sitting idly for <br></br>

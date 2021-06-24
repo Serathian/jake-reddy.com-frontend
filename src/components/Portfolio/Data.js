@@ -7,7 +7,7 @@ export const moreObject = {
   lightTextDesc: true,
   topLine: `It won't be long`,
   headLine: `Projects coming soon`,
-  description: `I'm constantly working to expand my portfolio and learn new skills`,
+  description: `I'm constantly working on expanding my portfolio and learning new skills`,
   show: false,
   buttonLabel: 'Take a look!',
   imgStart: true,
