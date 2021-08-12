@@ -121,16 +121,6 @@ const CVContent = ({ language = 'english' }) => {
               reCaptcha
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              ultricies nunc id nulla commodo tempor. Sed cursus ex sit amet
-              lacus tempus, ut molestie nulla placerat. Donec eu justo pharetra,
-              interdum arcu vitae, semper elit. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Praesent eleifend vitae sapien vel
-              scelerisque.
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
           <CVProjectLinksContainer>
             <CVGitLinkWrapper
               href='https://github.com/Serathian/jake-reddy.com-frontend'
@@ -150,32 +140,25 @@ const CVContent = ({ language = 'english' }) => {
         <CVProjectContainer>
           <CVSubtitleWrapper>
             <CVProjectBreakPoint />
-            <CVSubtitle>Climbing Gear Data Graph</CVSubtitle>
+            <CVSubtitle>COVID-19 Vaccination data aggregation</CVSubtitle>
           </CVSubtitleWrapper>
           <CVProjectSubtitleWrapper>
             <CVProjectSubtitle>
-              Personal project - Data display of use-able range for climbing
-              safety gear - Nodejs, Express, D3, React
+              Solita open exercise - Data aggregation and graphical display -
+              Nodejs, Express, MongoDB, D3, React, jest
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              ultricies nunc id nulla commodo tempor. Sed cursus ex sit amet
-              lacus tempus, ut molestie nulla placerat. Donec eu justo pharetra,
-              interdum arcu vitae, semper elit. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Praesent eleifend vitae sapien vel
-              scelerisque.
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
+
           <CVProjectLinksContainer>
             <CVGitLinkWrapper
-              href='https://github.com/Serathian/trad-rack-calculator-frontend'
+              href='https://github.com/Serathian/Vaccinations-2021-backend/blob/master/README.md'
               target='_blank'>
               <CVGitLogo />
               <CVGitLink>Source</CVGitLink>
             </CVGitLinkWrapper>
-            <CVDemoLinkWrapper style={{ textDecoration: 'line-through' }}>
+            <CVDemoLinkWrapper
+              href='https://afternoon-spire-41729.herokuapp.com/'
+              target='_blank'>
               <CVDemoLogo />
               <CVDemoLink>Live Demo</CVDemoLink>
             </CVDemoLinkWrapper>
@@ -193,16 +176,7 @@ const CVContent = ({ language = 'english' }) => {
               Highway 2 code - library database - Nodejs, GraphQL, React, Redux
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              ultricies nunc id nulla commodo tempor. Sed cursus ex sit amet
-              lacus tempus, ut molestie nulla placerat. Donec eu justo pharetra,
-              interdum arcu vitae, semper elit. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Praesent eleifend vitae sapien vel
-              scelerisque.
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
+
           <CVProjectLinksContainer>
             <CVGitLinkWrapper
               href='https://github.com/Serathian/library-app-frontend'
@@ -227,16 +201,7 @@ const CVContent = ({ language = 'english' }) => {
               Highway 2 code - blog listing app - Nodejs, Express, React, Redux
             </CVProjectSubtitle>
           </CVProjectSubtitleWrapper>
-          {/* <CVProjectDescriptionWrapper>
-            <CVProjectDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              ultricies nunc id nulla commodo tempor. Sed cursus ex sit amet
-              lacus tempus, ut molestie nulla placerat. Donec eu justo pharetra,
-              interdum arcu vitae, semper elit. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Praesent eleifend vitae sapien vel
-              scelerisque.
-            </CVProjectDescription>
-          </CVProjectDescriptionWrapper> */}
+
           <CVProjectLinksContainer>
             <CVGitLinkWrapper
               href='https://github.com/Serathian/blog-app-frontend'

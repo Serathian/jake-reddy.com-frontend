@@ -361,8 +361,45 @@ const VerticalTimelineComponent = () => {
         <h3 className='vertical-timeline-element-title'>Jake-reddy.com</h3>
 
         <StyledP>
-          Created this website you are currently on to be my portfolio.
+          Created this website you are currently on, to be my portfolio.
         </StyledP>
+      </StyledVerticalTimelineElement>
+      {/* SOLITA exercise*/}
+      <StyledVerticalTimelineElement
+        className='vertical-timeline-element--h2c-fullstack-starts'
+        date='May 2021'
+        iconStyle={{ background: '#C77748', color: '#fff' }}
+        contentStyle={{
+          borderTop: `5px solid #C77748`,
+        }}
+        icon={<TiInputChecked />}
+        position={'left'}>
+        <h3 className='vertical-timeline-element-title'>
+          <StyledLink
+            href='https://github.com/Serathian/Vaccinations-2021-backend/blob/master/README.md'
+            target='_blank'
+            aria-label='github'>
+            COVID data aggregation
+          </StyledLink>
+        </h3>
+
+        <StyledP>
+          Exercise in data aggregation and graphical data display.
+        </StyledP>
+      </StyledVerticalTimelineElement>
+      {/* Project in progress */}
+      <StyledVerticalTimelineElement
+        className='vertical-timeline-element--h2c-fullstack-starts'
+        date='May 2021'
+        iconStyle={{ background: '#49e55e', color: '#fff' }}
+        contentStyle={{
+          borderTop: `5px solid #49e55e`,
+        }}
+        icon={<TiCodeOutline />}
+        position={'right'}>
+        <h3 className='vertical-timeline-element-title'>Currently Undefined</h3>
+
+        <StyledP>Never stop coding..</StyledP>
       </StyledVerticalTimelineElement>
     </StyledVerticalTimeline>
   )
